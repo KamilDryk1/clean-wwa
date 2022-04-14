@@ -44,6 +44,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
   &__container {
     max-width: 1440px;
     margin: 0 auto;
@@ -59,7 +60,8 @@
         text-decoration: none;
 
         p {
-          color: black;
+          margin-top: 20px;
+          color: white;
           font-weight: bold;
           font-size: 20px;
           letter-spacing: 3px;
@@ -81,7 +83,7 @@
         .menu-link {
           text-decoration: none;
           font-size: 20px;
-          color: black;
+          color: white;
         }
       }
     }
