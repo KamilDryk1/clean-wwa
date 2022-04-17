@@ -21,6 +21,14 @@
         </div>
       </div>
     </section>
+	<section class="description">
+		<div class="description__container">
+			<div class="description__content">
+				<div class="description__content-text"></div>
+				<div class="description__content-photo"></div>
+			</div>
+		</div>
+	</section>
   </div>
 </template>
 
@@ -106,5 +114,9 @@ export default {
 		}
 	}
   }
+}
+
+.description {
+	height: 500px;
 }
 </style>
