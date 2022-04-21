@@ -50,7 +50,7 @@
     margin: 0 auto;
   }
   &__content {
-    margin: 0 8%;
+    margin: 0 4%;
     display: flex;
     justify-content: space-between;
 

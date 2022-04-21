@@ -27,7 +27,21 @@
     <section class="description">
       <div class="description__container">
         <div class="description__content">
-          <div class="description__content-text"></div>
+          <div class="description__content-text">
+            <h2>Pranie tapicerki nr 1 w Warszawie!</h2>
+            <p>
+              Jesteśmy profesjonalną firmą zajmującą się praniem tapicerki
+              meblowej i samochodowej, oraz wykładzin na terenie Warszawy i
+              okolic. Posiadamy wieloletnie doświadczenie w przywracaniu
+              pierwotnego stanu Państwa mebli. Pracujemy wyłącznie na najlepszym
+              sprzęcie wiodących marek Prochem, Karcher. Stosujemy najlepszą
+              chemię, która pozwoli usunąć uporczywe plamy, oraz nieprzyjemne
+              zapachy. Nasze kompetencje, oraz liczne specjalistyczne kursy
+              pozwalają dostarczać Państwu usługi na najwyższym poziomie.
+              Zachęcamy Państwa do skorzystania z naszych usług oraz do
+              zapoznania się z cennikiem.
+            </p>
+          </div>
           <div class="description__content-photo">
             <img
               src="assets/img/HomePage/description-img.jpg"
@@ -55,14 +69,15 @@ export default {
   background-color: black;
 
   &__container {
-    max-width: 1440px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
   }
 
   &__content {
     height: 700px;
-    margin: 0 8%;
+    max-width: 1440px;
+    margin: 0 auto;
 
     &-video {
       position: relative;
@@ -101,6 +116,7 @@ export default {
       position: absolute;
       top: 25%;
       z-index: 4;
+      margin: 0 4%;
       color: white;
       max-width: 65%;
 
@@ -124,7 +140,7 @@ export default {
 }
 
 .description {
-  height: 500px;
+  height: 800px;
 
   &__container {
     max-width: 1440px;
@@ -132,17 +148,28 @@ export default {
   }
 
   &__content {
-    margin: 0 8%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 4%;
     padding-top: 150px;
 
     &-text {
-      width: 40%;
+      width: 45%;
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: 32px;
+      }
+
+      p {
+        text-align: justify;
+        font-size: 20px;
+      }
     }
 
     &-photo {
-      width: 40%;
+      width: 45%;
+      margin: auto 0;
 
       img {
         width: 100%;
