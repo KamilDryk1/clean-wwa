@@ -51,12 +51,48 @@
         </div>
       </div>
     </section>
+    <section class="carousel">
+      <div class="carousel__container">
+        <div class="carousel__content">
+          <swiper
+            class="swiper carousel__content-swiper"
+            :options="swiperOptions"
+          ></swiper>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
   name: "IndexPage",
+
+  data() {
+    return {
+      swiperOptions: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: false,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        breakpoints: {
+          1250: {
+            slidesPerView: 3.4,
+          },
+          800: {
+            slidesPerView: 2.4,
+          },
+          500: {
+            slidesPerView: 1.6,
+          },
+        },
+      },
+    };
+  },
 };
 </script>
 
@@ -176,5 +212,24 @@ export default {
       }
     }
   }
+}
+.swiper {
+  max-width: 1440px;
+  margin: 0 0 0 4%;
+
+  &__slide-visual {
+    position: relative;
+    max-width: 600px;
+    max-width: 600px;
+  }
+
+  &__element-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+.swiper-slide-next + .swiper-slide + .swiper-slide {
+  opacity: 0.5;
 }
 </style>

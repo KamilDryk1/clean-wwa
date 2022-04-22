@@ -9,7 +9,7 @@ export default {
   head: {
     title: "clean-wwa",
     htmlAttrs: {
-      lang: "en",
+      lang: "pl",
     },
     meta: [
       { charset: "utf-8" },
@@ -24,7 +24,7 @@ export default {
   css: ["@/assets/css/util.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: "@/plugins/vue-awesome-swiper", mode: "client" }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -37,4 +37,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  router: {
+    extendRoutes(routes) {
+      routes.forEach((route) => {
+        const alias =
+          route.path.length > 1 ? `${route.path}/index.html` : "/index.html";
+        route.alias = alias;
+      });
+    },
+  },
 };
