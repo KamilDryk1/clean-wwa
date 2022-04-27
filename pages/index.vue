@@ -57,7 +57,63 @@
           <swiper
             class="swiper carousel__content-swiper"
             :options="swiperOptions"
-          ></swiper>
+          >
+            <swiper-slide>
+              <div class="swiper__element">
+                <div class="swiper__slide-visual">
+                  <img
+                    src="assets/img/HomePage/carousel-photo-1.jpg"
+                    alt=""
+                    class="swiper__element-img"
+                  />
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper__element">
+                <div class="swiper__slide-visual">
+                  <img
+                    src="assets/img/HomePage/carousel-photo-2.jpg"
+                    alt=""
+                    class="swiper__element-img"
+                  />
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper__element">
+                <div class="swiper__slide-visual">
+                  <img
+                    src="assets/img/HomePage/carousel-photo-3.jpg"
+                    alt=""
+                    class="swiper__element-img"
+                  />
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper__element">
+                <div class="swiper__slide-visual">
+                  <img
+                    src="assets/img/HomePage/carousel-photo-4.jpg"
+                    alt=""
+                    class="swiper__element-img"
+                  />
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper__element">
+                <div class="swiper__slide-visual">
+                  <img
+                    src="assets/img/HomePage/carousel-photo-5.jpg"
+                    alt=""
+                    class="swiper__element-img"
+                  />
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper>
         </div>
       </div>
     </section>
@@ -80,7 +136,7 @@ export default {
         },
         loop: true,
         breakpoints: {
-          1250: {
+          1000: {
             slidesPerView: 3.4,
           },
           800: {
@@ -176,7 +232,7 @@ export default {
 }
 
 .description {
-  height: 800px;
+  margin-bottom: 150px;
 
   &__container {
     max-width: 1440px;
@@ -204,13 +260,23 @@ export default {
     }
 
     &-photo {
-      width: 45%;
       margin: auto 0;
+      max-height: 380px;
+      width: 45%;
+      //   overflow: hidden;
 
       img {
+        object-fit: cover;
+        max-height: 380px;
         width: 100%;
       }
     }
+  }
+}
+.carousel {
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 .swiper {
@@ -219,8 +285,10 @@ export default {
 
   &__slide-visual {
     position: relative;
-    max-width: 600px;
-    max-width: 600px;
+    max-width: 350px;
+    height: 350px;
+    border-radius: 30px;
+    overflow: hidden;
   }
 
   &__element-img {
