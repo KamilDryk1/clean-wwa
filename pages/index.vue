@@ -38,8 +38,8 @@
               chemię, która pozwoli usunąć uporczywe plamy, oraz nieprzyjemne
               zapachy. Nasze kompetencje, oraz liczne specjalistyczne kursy
               pozwalają dostarczać Państwu usługi na najwyższym poziomie.
-              Zachęcamy Państwa do skorzystania z naszych usług oraz do
-              zapoznania się z cennikiem.
+              Zachęcamy do skorzystania z naszych usług oraz do zapoznania się z
+              cennikiem.
             </p>
           </div>
           <div class="description__content-photo">
@@ -114,6 +114,22 @@
               </div>
             </swiper-slide>
           </swiper>
+        </div>
+      </div>
+    </section>
+    <section class="more">
+      <div class="more__container">
+        <div class="more__content">
+          <div class="more__content-offer">
+            <p>
+              Chcesz poznać całość oferowanych przez nas usług? Kliknij tutaj!
+            </p>
+            <i class="fa-solid fa-clipboard-list"></i>
+          </div>
+          <div class="more__content-gallery">
+            <p>Całość naszych prac przed i po znajdziesz tutaj!</p>
+            <i class="fa-solid fa-camera"></i>
+          </div>
         </div>
       </div>
     </section>
@@ -232,7 +248,8 @@ export default {
 }
 
 .description {
-  margin-bottom: 150px;
+  margin-bottom: 200px;
+  margin-top: 50px;
 
   &__container {
     max-width: 1440px;
@@ -299,5 +316,80 @@ export default {
 }
 .swiper-slide-next + .swiper-slide + .swiper-slide {
   opacity: 0.5;
+}
+.more {
+  margin-top: 200px;
+  margin-bottom: 150px;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    margin: 0 4%;
+    display: flex;
+    justify-content: space-between;
+
+    &-offer {
+      width: 47%;
+      height: 400px;
+      position: relative;
+      background-color: #7637b3;
+      border-radius: 30px;
+      cursor: pointer;
+
+      p {
+        margin: 70px 5%;
+        font-size: 28px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      i {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 120px;
+        color: white;
+      }
+    }
+
+    &-offer:hover {
+      background-color: #9044db;
+    }
+
+    &-gallery {
+      width: 47%;
+      height: 400px;
+      position: relative;
+      background-color: #c12994;
+      border-radius: 30px;
+      cursor: pointer;
+
+      p {
+        margin: 70px 5%;
+        font-size: 28px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      i {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 120px;
+        color: white;
+      }
+    }
+
+    &-gallery:hover {
+      background-color: #db30a8;
+    }
+  }
 }
 </style>
