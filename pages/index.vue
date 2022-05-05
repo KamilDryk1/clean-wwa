@@ -133,6 +133,55 @@
         </div>
       </div>
     </section>
+    <section class="opinions">
+      <div class="opinions__container">
+        <div class="opinions__content">
+          <div class="opinions__content-opinion opinion-1">
+            <p>
+              Korzystałem z usług już wielokrotnie i zawsze byłem w pełni
+              zadowolony z efektów jak i utrzymania czystości w trakcie pracy.
+              Profesjonalna obsługa, a ceny konkurencyjne.
+            </p>
+            <h1>Krzysztof</h1>
+          </div>
+          <div class="opinions__content-opinion opinion-2">
+            <p>
+              Z usług firmy cleanwwa korzystałem pierwszy raz, ale na pewno nie
+              ostatni. Szybko, rzetelnie i punktualnie. Z całego serca mogę
+              polecić usługi prania tapicerki meblowej mój narożnik wygląda jak
+              nowy i bardzo ładnie pachnie. Polecam!!!
+            </p>
+            <h1>Joanna</h1>
+          </div>
+          <div class="opinions__content-opinion opinion-3">
+            <p>
+              Jestem bardzo zadowolony z usługi prania tapicerki samochodowej.
+              Szybki i sprawny kontakt. Firma wyróżniła się punktualnością i
+              sprawnie uporała się nawet z najtrudniejszymi plamami i
+              nieprzyjemnym zapachem. Polecam.
+            </p>
+            <h1>Marcin</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__content-logo">
+            <img src="assets/img/logo.jpg" alt="logo" />
+          </div>
+          <div class="footer__content-contact">
+            <h1>Adres i dane kontaktowe</h1>
+            <p>ul. Kasprzaka 29c</p>
+            <p>01-234 Warszawa</p>
+            <p>cleanwwa@gmail.com</p>
+            <p>+48 733 740 112</p>
+          </div>
+          <div class="footer__content-socials"></div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -147,7 +196,7 @@ export default {
         spaceBetween: 30,
         centeredSlides: false,
         autoplay: {
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: false,
         },
         loop: true,
@@ -212,9 +261,9 @@ export default {
         height: 700px;
         background: linear-gradient(
           to right,
-          black 0% 3%,
-          rgba(0, 0, 0, 0.4),
-          black 97% 100%
+          black 0% 1%,
+          rgba(0, 0, 0, 0.3),
+          black 99% 100%
         );
         z-index: 3;
       }
@@ -389,6 +438,56 @@ export default {
 
     &-gallery:hover {
       background-color: #db30a8;
+    }
+  }
+}
+.opinions {
+  width: 100%;
+  background-color: #212121;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    margin: 0 4%;
+    display: flex;
+    justify-content: space-around;
+
+    &-opinion {
+      width: 25%;
+      text-align: center;
+    }
+
+    .opinion-2 {
+      margin-top: 30px;
+    }
+  }
+}
+.footer {
+  width: 100%;
+  background-color: #03989e;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    margin: 0 4%;
+    display: flex;
+    color: white;
+
+    &-contact {
+      margin-top: 100px;
+
+      p {
+        font-size: 20px;
+      }
     }
   }
 }
