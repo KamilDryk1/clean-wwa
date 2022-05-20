@@ -1,29 +1,5 @@
 <template>
   <div>
-    <section class="header">
-      <div class="header__container">
-        <div class="header__content">
-          <div class="header__content-video">
-            <video
-              class="vid"
-              autoplay
-              loop
-              muted
-              src="assets/video/HomePage/background-video.mp4"
-            ></video>
-            <div class="overlay"></div>
-          </div>
-          <div class="header__content-text">
-            <h1 class="title">CLEAN-WWA</h1>
-            <h2 class="subtitle">
-              Pranie tapicerki meblowej i samochodowej na terenie Warszawy i
-              okolic.
-            </h2>
-            <p>Poznaj naszą ofertę!</p>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="description">
       <div class="description__container">
         <div class="description__content">
@@ -54,6 +30,7 @@
     <section class="carousel">
       <div class="carousel__container">
         <div class="carousel__content">
+          <h2>Efekty naszej pracy</h2>
           <swiper
             class="swiper carousel__content-swiper"
             :options="swiperOptions"
@@ -137,6 +114,7 @@
       <div class="opinions__container">
         <div class="opinions__content">
           <div class="opinions__content-opinion opinion-1">
+            <img src="assets/img/HomePage/fb-male.jpg" alt="" />
             <p>
               Korzystałem z usług już wielokrotnie i zawsze byłem w pełni
               zadowolony z efektów jak i utrzymania czystości w trakcie pracy.
@@ -145,6 +123,7 @@
             <h1>Krzysztof</h1>
           </div>
           <div class="opinions__content-opinion opinion-2">
+            <img src="assets/img/HomePage/fb-famale.jpg" alt="" />
             <p>
               Z usług firmy cleanwwa korzystałem pierwszy raz, ale na pewno nie
               ostatni. Szybko, rzetelnie i punktualnie. Z całego serca mogę
@@ -154,6 +133,7 @@
             <h1>Joanna</h1>
           </div>
           <div class="opinions__content-opinion opinion-3">
+            <img src="assets/img/HomePage/fb-male.jpg" alt="" />
             <p>
               Jestem bardzo zadowolony z usługi prania tapicerki samochodowej.
               Szybki i sprawny kontakt. Firma wyróżniła się punktualnością i
@@ -162,23 +142,6 @@
             </p>
             <h1>Marcin</h1>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="footer">
-      <div class="footer__container">
-        <div class="footer__content">
-          <div class="footer__content-logo">
-            <img src="assets/img/logo.jpg" alt="logo" />
-          </div>
-          <div class="footer__content-contact">
-            <h1>Adres i dane kontaktowe</h1>
-            <p>ul. Kasprzaka 29c</p>
-            <p>01-234 Warszawa</p>
-            <p>cleanwwa@gmail.com</p>
-            <p>+48 733 740 112</p>
-          </div>
-          <div class="footer__content-socials"></div>
         </div>
       </div>
     </section>
@@ -218,87 +181,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header {
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  background-color: black;
-
-  &__container {
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  &__content {
-    height: 700px;
-    max-width: 1440px;
-    margin: 0 auto;
-
-    &-video {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 700px;
-
-      .vid {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 700px;
-        width: 100%;
-        z-index: 1;
-        object-fit: cover;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 700px;
-        background: linear-gradient(
-          to right,
-          black 0% 1%,
-          rgba(0, 0, 0, 0.3),
-          black 99% 100%
-        );
-        z-index: 3;
-      }
-    }
-
-    &-text {
-      position: absolute;
-      top: 25%;
-      z-index: 4;
-      margin: 0 4%;
-      color: white;
-      max-width: 65%;
-
-      h1 {
-        font-size: 64px;
-      }
-
-      h2 {
-        font-weight: 400;
-        font-size: 30px;
-        margin-top: 30px;
-      }
-
-      p {
-        font-weight: 200;
-        margin-top: 30px;
-        font-size: 20px;
-      }
-    }
-  }
-}
-
 .description {
-  margin-bottom: 200px;
-  margin-top: 50px;
+  margin-bottom: 150px;
+  //   margin-top: 50px;
 
   &__container {
     max-width: 1440px;
@@ -343,6 +228,10 @@ export default {
   &__container {
     max-width: 1440px;
     margin: 0 auto;
+
+    h2 {
+      margin: 20px 4%;
+    }
   }
 }
 .swiper {
@@ -367,7 +256,7 @@ export default {
   opacity: 0.5;
 }
 .more {
-  margin-top: 200px;
+  margin-top: 150px;
   margin-bottom: 150px;
 
   &__container {
@@ -390,7 +279,7 @@ export default {
 
       p {
         margin: 70px 5%;
-        font-size: 28px;
+        font-size: 26px;
         color: white;
         font-weight: bold;
         text-align: center;
@@ -401,7 +290,7 @@ export default {
         top: 55%;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 120px;
+        font-size: 100px;
         color: white;
       }
     }
@@ -420,7 +309,7 @@ export default {
 
       p {
         margin: 70px 5%;
-        font-size: 28px;
+        font-size: 26px;
         color: white;
         font-weight: bold;
         text-align: center;
@@ -431,7 +320,7 @@ export default {
         top: 55%;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 120px;
+        font-size: 100px;
         color: white;
       }
     }
@@ -461,33 +350,15 @@ export default {
     &-opinion {
       width: 25%;
       text-align: center;
+
+      img {
+        max-width: 100px;
+        border-radius: 50%;
+      }
     }
 
     .opinion-2 {
       margin-top: 30px;
-    }
-  }
-}
-.footer {
-  width: 100%;
-  background-color: #03989e;
-
-  &__container {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
-  &__content {
-    margin: 0 4%;
-    display: flex;
-    color: white;
-
-    &-contact {
-      margin-top: 100px;
-
-      p {
-        font-size: 20px;
-      }
     }
   }
 }
