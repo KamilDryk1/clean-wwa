@@ -83,6 +83,12 @@ export default {
         );
         z-index: 3;
       }
+
+      @media (max-width: 1440px) {
+        .overlay {
+          background: rgba(0, 0, 0, 0.6);
+        }
+      }
     }
 
     &-img {
@@ -115,6 +121,12 @@ export default {
           black 99% 100%
         );
         z-index: 3;
+      }
+
+      @media (max-width: 1440px) {
+        .overlay {
+          background: rgba(0, 0, 0, 0.6);
+        }
       }
     }
 

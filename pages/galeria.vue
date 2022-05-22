@@ -1,19 +1,19 @@
 <template>
-  <section class="price">
-    <div class="price__container">
-      <div class="price__content"></div>
+  <section class="gallery">
+    <div class="gallery__container">
+      <div class="gallery__content"></div>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  layout: "price",
+  layout: "gallery",
 };
 </script>
 
 <style lang="scss" scoped>
-.price {
+.gallery {
   &__container {
     max-width: 1440px;
     margin: 0 auto;

@@ -37,35 +37,13 @@
         </div>
       </div>
     </nav>
-    <section class="header">
-      <div class="header__container">
-        <div class="header__content">
-          <div class="header__content-video">
-            <video
-              class="vid"
-              autoplay
-              loop
-              muted
-              src="assets/video/HomePage/background-video.mp4"
-            ></video>
-            <div class="overlay"></div>
-          </div>
-          <div class="header__content-text">
-            <h1 class="title">CLEAN-WWA</h1>
-            <h2 class="subtitle">
-              Pranie tapicerki meblowej i samochodowej na terenie Warszawy i
-              okolic.
-            </h2>
-            <p>Poznaj naszą ofertę!</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <TheHeader :video="video" :img="img" />
   </div>
 </template>
 
 <script>
 export default {
+  props: ["video", "img"],
   data() {
     return {
       modalStatus: "inactive",

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar :video="video" />
+    <Navbar :img="img" />
     <Nuxt />
     <Footer />
   </div>
@@ -10,8 +10,8 @@
 export default {
   data() {
     return {
-      video: "assets/video/HomePage/background-video.mp4",
-      img: null,
+      video: null,
+      img: "assets/img/Cennik/price-list-img.jpg",
     };
   },
 };
