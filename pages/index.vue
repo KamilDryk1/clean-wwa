@@ -125,9 +125,9 @@
           <div class="opinions__content-opinion opinion-2">
             <img src="assets/img/HomePage/fb-famale.jpg" alt="" />
             <p>
-              Z usług firmy cleanwwa korzystałem pierwszy raz, ale na pewno nie
+              Z usług firmy cleanwwa korzystałam pierwszy raz, ale na pewno nie
               ostatni. Szybko, rzetelnie i punktualnie. Z całego serca mogę
-              polecić usługi prania tapicerki meblowej mój narożnik wygląda jak
+              polecić usługi prania tapicerki meblowej, mój narożnik wygląda jak
               nowy i bardzo ładnie pachnie. Polecam!!!
             </p>
             <h1>Joanna</h1>
