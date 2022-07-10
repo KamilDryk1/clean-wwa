@@ -1,0 +1,61 @@
+{
+  "pranie tapicerki meblowej": [
+    { "Wersalka": "od 110 zł" },
+    { "Sofa 2 osobowa": "od 120 zł" },
+    { "Sofa 3 osobowa": "od 130 zł" },
+    { "Narożnik 3 osobowy": "od 150 zł" },
+    { "Narożnik większy niż 3 os (powyżej 2.5m)": "od 180 zł" },
+    { "Narożnik w kształcie litery U": "od 250 zł" },
+    { "Fotel": "50-80 zł" },
+    { "Krzesło": "15-30 zł" },
+    { "Krzesło biurowe": "od 25 zł" },
+    { "Pufa": "od 20 zł" },
+    { "Rama łóżka": "od 100 zł" },
+    { "Poduszki": "5-15 zł" },
+    {
+      "Pranie materiałów plamoodpornych (np. penta, carabu)": "wycena indywidualna"
+    }
+  ],
+  "Usługi dodatkowe": [
+    { "Neutralizacja zapachów": "30 zł" },
+    { "Impregnacja tapicerk": "80% ceny prania mebla" },
+    { "Podsuszanie tapicerki": "20 zł" }
+  ],
+  "Pranie dywanu w mieszkaniu klienta": [
+    { "Dywan syntetyczny krótki włos": "15 zł m2" },
+    { "Dywan syntetyczny długi włos (Shaggy)": "17 zł m2" },
+    { "Wykładzina dywanowa": "15 zł m2" }
+  ],
+  "Pranie wykładziny biurowej": [
+    { "Wykładzina biurowa do 100 m2": "12 zl m2" },
+    { "Wykładzina biurowa od 100 m2": "wycena indywidualna" }
+  ],
+  "Pranie materacy": [
+    {
+      "Pranie materaca jednoosobowego z jednej strony / z obu stron": "od 60/90 zł"
+    },
+    {
+      "Pranie materaca dwuosobowego z jednej strony / z obu stron": "od 100/150 zł"
+    }
+  ],
+  "Pranie tapicerki samochodowej": [
+    { "Przednie fotele plus kanap": "od 160 zł" },
+    { "Czyszczenie podsufitki": "100 zł" },
+    { "Odkurzanie i pranie podłogi": "od 50 zł" },
+    { "Pranie boczków drzwi": "od 50 zł" },
+    { "Pranie bagażnika": "od 50 zł" },
+    { "Pranie dywaników": "od 10 zł szt" },
+    { "Czyszczenie plastików, kokpitu": "od 50 zł" },
+    { "Czyszczenie foteli skórzanych": "od 250 zł" },
+    { "Kompleksowe czyszczenie całego wnętrza samochodu": "od 400 zł" }
+  ],
+  "Wypożyczenie odkurzacza piorącego profi 50.1c, lub karcher puzzi 10/1": [
+    { "Doba": "60 zł + miarka proszku (100g) Prochem Crystal Green GRATIS!" },
+    { "Dodatkowe 100g proszku": "10 zł" },
+    { "Odbiór osobisty": "0 zł" },
+    {
+      "Dowóz i odbiór na terenie Warszawy": "40 zł (20 zł dowóz + 20 zł odbiór)"
+    },
+    { "Kaucja": "200 zł" }
+  ]
+}
