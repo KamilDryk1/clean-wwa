@@ -60,7 +60,7 @@ export default {
       height: 700px;
 
       .vid {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         height: 700px;
@@ -99,7 +99,7 @@ export default {
       height: 700px;
 
       .img {
-        position: absolute;
+		position: fixed;
         top: 0;
         left: 0;
         height: 700px;

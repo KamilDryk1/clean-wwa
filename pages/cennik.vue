@@ -175,6 +175,17 @@
           </li>
         </ul>
         <h1 class="price__content-title">
+          Mycie powierzchni twardych płytki, gres, posadzki, podłogi przemysłowe
+        </h1>
+        <ul class="price__content-list">
+          <li class="price__content-element">
+            <div class="key"><p>Mycie posadzki</p></div>
+            <div class="value">
+              <p>6 - 10 zł m2</p>
+            </div>
+          </li>
+        </ul>
+        <h1 class="price__content-title">
           Wypożyczenie odkurzacza piorącego profi 50.1c, lub karcher puzzi 10/1
         </h1>
         <ul class="price__content-list">
@@ -238,6 +249,10 @@ export default {
 
 <style lang="scss" scoped>
 .price {
+	position: relative;
+	z-index: 15;
+	background-color: #fff;
+
   &__container {
     max-width: 1440px;
     margin: 0 auto;
@@ -252,7 +267,8 @@ export default {
     z-index: 5;
 
     &-title {
-      margin: 40px auto;
+    //   margin: 40px auto;
+	padding: 40px 0;
       text-align: center;
       font-size: 30px;
     }
@@ -296,7 +312,7 @@ export default {
     .info-last {
       font-size: 14px;
       text-align: center;
-      margin-bottom: 40px;
+      padding-bottom: 40px;
     }
   }
 }

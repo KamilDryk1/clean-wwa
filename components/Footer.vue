@@ -29,6 +29,8 @@
 .footer {
   width: 100%;
   background-color: #03989e;
+  z-index: 15;
+  position: relative;
 
   &__container {
     max-width: 1440px;

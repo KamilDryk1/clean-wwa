@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index">
     <section class="description">
       <div class="description__container">
         <div class="description__content">
@@ -181,8 +181,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.index {
+	position: relative;
+  z-index: 15;
+  background-color: #fff;
+}
+
 .description {
   margin-bottom: 150px;
+  
   //   margin-top: 50px;
 
   &__container {

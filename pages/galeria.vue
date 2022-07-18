@@ -14,6 +14,10 @@ export default {
 
 <style lang="scss" scoped>
 .gallery {
+	position: relative;
+	z-index: 15;
+	background-color: #fff;
+
   &__container {
     max-width: 1440px;
     margin: 0 auto;
