@@ -4,11 +4,9 @@
       <div class="header__content">
         <div v-if="video" class="header__content-video">
           <video class="vid" autoplay loop muted :src="video"></video>
-          <div class="overlay"></div>
         </div>
         <div v-else class="header__content-img">
           <img class="img" :src="img" alt="" />
-          <div class="overlay"></div>
         </div>
         <div class="header__content-text">
           <h1 class="title">CLEAN-WWA</h1>
@@ -20,6 +18,7 @@
         </div>
       </div>
     </div>
+    <div class="overlay"></div>
   </section>
 </template>
 
@@ -40,6 +39,28 @@ export default {
   left: 0;
   background-color: black;
   z-index: 1;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(
+      to right,
+      black 0% 1%,
+      rgba(0, 0, 0, 0.3),
+      black 99% 100%
+    );
+    z-index: 3;
+    animation: fadeIn 0.7s ease-in-out forwards;
+  }
+
+  @media (max-width: 1440px) {
+    .overlay {
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
 
   &__container {
     max-width: 1920px;
@@ -68,27 +89,6 @@ export default {
         z-index: 1;
         object-fit: cover;
       }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 700px;
-        background: linear-gradient(
-          to right,
-          black 0% 1%,
-          rgba(0, 0, 0, 0.3),
-          black 99% 100%
-        );
-        z-index: 3;
-      }
-
-      @media (max-width: 1440px) {
-        .overlay {
-          background: rgba(0, 0, 0, 0.6);
-        }
-      }
     }
 
     &-img {
@@ -99,28 +99,13 @@ export default {
       height: 700px;
 
       .img {
-		position: fixed;
+        position: fixed;
         top: 0;
         left: 0;
         height: 700px;
         width: 100%;
         z-index: 1;
         object-fit: cover;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 700px;
-        background: linear-gradient(
-          to right,
-          black 0% 1%,
-          rgba(0, 0, 0, 0.3),
-          black 99% 100%
-        );
-        z-index: 3;
       }
 
       @media (max-width: 1440px) {
@@ -154,6 +139,14 @@ export default {
         font-size: 20px;
       }
     }
+  }
+}
+@keyframes fadeIn {
+  from {
+    backdrop-filter: brightness(13%);
+  }
+  to {
+    backdrop-filter: brightness(70%);
   }
 }
 </style>
