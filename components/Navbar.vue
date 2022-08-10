@@ -4,10 +4,13 @@
       <div class="navbar__container">
         <div class="navbar__content">
           <div class="navbar__content__logo">
-            <nuxt-link to="/" class="logo"><p>CLEAN-WWA</p></nuxt-link>
+            <nuxt-link to="/" class="logo"
+              ><img class="logo-sm" src="/assets/img/logo-sm-alt.png" alt=""
+            /></nuxt-link>
           </div>
           <div class="navbar__content-menu">
             <ul class="navbar__content-menu-list">
+              <div class="navbar__content-overlay"></div>
               <li class="navbar__content-menu-item">
                 <nuxt-link
                   to="/cennik"
@@ -25,13 +28,18 @@
                 >
               </li>
               <li class="navbar__content-menu-item">
-                <nuxt-link
-                  to="/kontakt"
+                <span
+                  v-scroll-to="'#footer'"
                   class="menu-link"
                   @click.native="closeModal"
-                  >Kontakt</nuxt-link
+                  >Kontakt</span
                 >
               </li>
+              <div class="navbar__content-menu-hamburger" @click="openModal">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </ul>
           </div>
         </div>
@@ -81,17 +89,23 @@ export default {
       .logo {
         text-decoration: none;
 
-        p {
-          margin-top: 20px;
-          color: white;
-          font-weight: bold;
-          font-size: 20px;
-          letter-spacing: 3px;
+        // p {
+        //   margin-top: 20px;
+        //   color: white;
+        //   font-weight: bold;
+        //   font-size: 20px;
+        //   letter-spacing: 3px;
+        // }
+
+        .logo-sm {
+          max-width: 70px;
+          margin-top: 5px;
         }
       }
     }
 
     &-menu {
+      position: relative;
       &-list {
         display: flex;
         justify-content: space-between;
@@ -101,11 +115,42 @@ export default {
         margin-top: 20px;
       }
 
+      @media (max-width: 1000px) {
+        width: 100px;
+      }
+
       &-item {
         .menu-link {
           text-decoration: none;
           font-size: 20px;
           color: white;
+          cursor: pointer;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        &-item {
+          display: none;
+        }
+
+        &-hamburger {
+          width: 40px;
+          height: 30px;
+          position: absolute;
+          top: 50%;
+          right: 3%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          div {
+            width: 100%;
+            height: 6px;
+            border-radius: 10px;
+            background-color: white;
+          }
         }
       }
     }

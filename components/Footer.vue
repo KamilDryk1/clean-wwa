@@ -1,5 +1,5 @@
 <template>
-  <section class="footer">
+  <section class="footer" id="footer">
     <div class="footer__container">
       <div class="footer__content">
         <div class="footer__content-logo">
@@ -78,6 +78,23 @@
 
       .social:hover {
         opacity: 0.5;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    &__content {
+      flex-direction: column;
+
+      &-logo {
+        img {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+
+      &-contact {
+        margin: 0 auto 80px auto;
       }
     }
   }

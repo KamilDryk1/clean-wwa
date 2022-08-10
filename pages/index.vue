@@ -182,14 +182,14 @@ export default {
 
 <style lang="scss" scoped>
 .index {
-	position: relative;
+  position: relative;
   z-index: 15;
   background-color: #fff;
 }
 
 .description {
   margin-bottom: 150px;
-  
+
   //   margin-top: 50px;
 
   &__container {
@@ -280,7 +280,8 @@ export default {
       width: 47%;
       height: 400px;
       position: relative;
-      background-color: #7637b3;
+      // background-color: #7637b3;
+      background-color: #03989e;
       border-radius: 30px;
       cursor: pointer;
 
@@ -303,14 +304,16 @@ export default {
     }
 
     &-offer:hover {
-      background-color: #9044db;
+      // background-color: #9044db;
+      background-color: #00b1b8;
     }
 
     &-gallery {
       width: 47%;
       height: 400px;
       position: relative;
-      background-color: #c12994;
+      // background-color: #c12994;
+      background-color: #03989e;
       border-radius: 30px;
       cursor: pointer;
 
@@ -333,7 +336,7 @@ export default {
     }
 
     &-gallery:hover {
-      background-color: #db30a8;
+      background-color: #00b1b8;
     }
   }
 }
