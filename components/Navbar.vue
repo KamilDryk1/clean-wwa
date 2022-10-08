@@ -28,6 +28,22 @@
                 >
               </li>
               <li class="navbar__content-menu-item">
+                <nuxt-link
+                  to="/uslugi"
+                  class="menu-link"
+                  @click.native="closeModal"
+                  >Usługi</nuxt-link
+                >
+              </li>
+              <li class="navbar__content-menu-item">
+                <nuxt-link
+                  to="/blog"
+                  class="menu-link"
+                  @click.native="closeModal"
+                  >Blog</nuxt-link
+                >
+              </li>
+              <li class="navbar__content-menu-item">
                 <span
                   v-scroll-to="'#footer'"
                   class="menu-link"
@@ -111,7 +127,7 @@ export default {
         justify-content: space-between;
         list-style: none;
         color: black;
-        width: 400px;
+        width: 600px;
         margin-top: 20px;
       }
 
