@@ -6,7 +6,7 @@
           <div class="navbar__content__logo">
             <nuxt-link to="/" class="logo"
               ><img class="logo-sm" src="/assets/img/logo-sm-alt.png" alt=""
-            /></nuxt-link>
+            /><h1 class="title">CLEAN-WWA</h1></nuxt-link>
           </div>
           <div class="navbar__content-menu">
             <ul class="navbar__content-menu-list">
@@ -104,6 +104,15 @@ export default {
       min-width: 200px;
       .logo {
         text-decoration: none;
+        display: flex;
+
+        .title {
+          margin: auto 0;
+          padding-left: 15px;
+          font-size: 32px;
+          text-decoration: none;
+          color: white;
+        }
 
         // p {
         //   margin-top: 20px;
@@ -138,7 +147,7 @@ export default {
       &-item {
         .menu-link {
           text-decoration: none;
-          font-size: 20px;
+          font-size: 22px;
           color: white;
           cursor: pointer;
         }

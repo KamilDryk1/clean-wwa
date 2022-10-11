@@ -6,25 +6,25 @@
 		<ul class="price__content-list">
 		  <li class="price__content-element">
 			<div class="key"><p>Wersalka</p></div>
-			<div class="value"><p>od 110 zł</p></div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key"><p>Sofa 2 osobowa</p></div>
 			<div class="value"><p>od 120 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
-			<div class="key"><p>Sofa 3 osobowa</p></div>
+			<div class="key"><p>Sofa 2 osobowa</p></div>
 			<div class="value"><p>od 130 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
+			<div class="key"><p>Sofa 3 osobowa</p></div>
+			<div class="value"><p>od 140 zł</p></div>
+		  </li>
+		  <li class="price__content-element">
 			<div class="key"><p>Narożnik 3 osobowy</p></div>
-			<div class="value"><p>od 150 zł</p></div>
+			<div class="value"><p>od 170 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
 			  <p>Narożnik większy niż 3 os (powyżej 2.5m)</p>
 			</div>
-			<div class="value"><p>od 180 zł</p></div>
+			<div class="value"><p>od 200 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
@@ -54,13 +54,13 @@
 			<div class="key">
 			  <p>Pufa</p>
 			</div>
-			<div class="value"><p>od 20 zł</p></div>
+			<div class="value"><p>od 30 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
 			  <p>Rama łóżka</p>
 			</div>
-			<div class="value"><p>od 100 zł</p></div>
+			<div class="value"><p>od 110 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
@@ -136,7 +136,7 @@
 		<h1 class="price__content-title">Pranie tapicerki samochodowej</h1>
 		<ul class="price__content-list">
 		  <li class="price__content-element">
-			<div class="key"><p>Przednie fotele plus kanap</p></div>
+			<div class="key"><p>Przednie fotele plus kanapa</p></div>
 			<div class="value"><p>od 160 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
@@ -275,7 +275,7 @@ export default {
 	}
 
 	&-list {
-	  max-width: 700px;
+	  max-width: 1200px;
 	  margin: 0 auto;
 	}
 
@@ -288,7 +288,7 @@ export default {
 	  div {
 		width: 50%;
 		text-align: center;
-		font-size: 18px;
+		font-size: 22px;
 		margin: auto 0;
 	  }
 

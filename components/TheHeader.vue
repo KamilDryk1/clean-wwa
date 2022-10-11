@@ -9,7 +9,7 @@
           <img class="img" :src="img" alt="" />
         </div>
         <div class="header__content-text">
-          <h1 class="title">CLEAN-WWA</h1>
+          <!-- <h1 class="title">CLEAN-WWA</h1> -->
           <h2 class="subtitle">
             Pranie tapicerki meblowej i samochodowej na terenie Warszawy i
             okolic.
@@ -117,26 +117,29 @@ export default {
 
     &-text {
       position: absolute;
-      top: 25%;
+      top: 35%;
+      left: 50%;
+      transform: translateX(-50%);
       z-index: 4;
-      margin: 0 4%;
+      // margin: 0 4%;
       color: white;
-      max-width: 65%;
 
       h1 {
         font-size: 64px;
       }
 
       h2 {
-        font-weight: 400;
-        font-size: 30px;
+        font-weight: 700;
+        font-size: 38px;
         margin-top: 30px;
+        text-align: center;
       }
 
       p {
         font-weight: 200;
         margin-top: 30px;
-        font-size: 20px;
+        font-size: 26px;
+        text-align: center;
       }
     }
   }
