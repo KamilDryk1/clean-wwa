@@ -2,7 +2,7 @@
   <section class="gallery">
     <div class="gallery__container">
       <div class="gallery__content">
-		<h1 class="gallery__content-title">Efekty naszej pracy</h1>
+        <h1 class="gallery__content-title">Efekty naszej pracy</h1>
         <ul class="gallery__content-list">
           <li
             class="gallery__content-element"
@@ -64,12 +64,12 @@ export default {
     // transform: translateY(-100px);
     z-index: 5;
 
-	&-title {
-		text-align: center;
-		padding-top: 50px;
-		font-size: 30px;
-		color: #03989e;
-	}
+    &-title {
+      text-align: center;
+      padding-top: 50px;
+      font-size: 30px;
+      color: #03989e;
+    }
 
     &-list {
       display: flex;
