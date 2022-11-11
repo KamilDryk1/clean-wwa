@@ -17,21 +17,17 @@
               jest uzależniony od temperatury, wilgotność, stopnia zabrudzenia i
               zajmuje od kilku do kilkunastu godzin.
             </p>
-            <img
-              src="/assets/img/Uslugi/meblowa.jpg"
-              class="services__content-img"
-              alt=""
-            />
+            <div class="services__content-img">
+              <img src="/assets/img/Uslugi/meblowa.jpg" class="" alt="" />
+            </div>
           </div>
         </div>
-        <div class="services__content-carpet">
+        <div class="services__content-carpet show-elem show-elem-bottom">
           <h1 class="services__content-title">Pranie wykładzin i dywanów</h1>
           <div class="elements">
-            <img
-              src="/assets/img/Uslugi/dywany.jpg"
-              class="services__content-img"
-              alt=""
-            />
+            <div class="services__content-img">
+              <img src="/assets/img/Uslugi/dywany.jpg" class="" alt="" />
+            </div>
             <p class="services__content-text">
               Pranie odbywa się metodą ekstrakcyjną, przy użyciu skutecznych
               środków (Prochem,Chemspec) w domu klienta. Przed właściwym praniem
@@ -43,7 +39,7 @@
             </p>
           </div>
         </div>
-        <div class="services__content-auto">
+        <div class="services__content-auto show-elem show-elem-bottom">
           <h1 class="services__content-title">Auto detailing wnętrza</h1>
           <div class="elements">
             <p class="services__content-text">
@@ -54,23 +50,19 @@
               wnętrza,<br />- bonetowanie podsufitki.<br />* Czyszczenie
               wykonujemy u klienta (potrzebny dostęp do prądu).
             </p>
-            <img
-              src="/assets/img/Uslugi/auto.jpg"
-              class="services__content-img"
-              alt=""
-            />
+            <div class="services__content-img">
+              <img src="/assets/img/Uslugi/auto.jpg" class="" alt="" />
+            </div>
           </div>
         </div>
-        <div class="services__content-leather">
+        <div class="services__content-leather show-elem show-elem-bottom">
           <h1 class="services__content-title">
             Czyszczenie skór z impregnacją
           </h1>
           <div class="elements">
-            <img
-              src="/assets/img/Uslugi/skora.jpg"
-              class="services__content-img"
-              alt=""
-            />
+            <div class="services__content-img">
+              <img src="/assets/img/Uslugi/skora.jpg" class="" alt="" />
+            </div>
             <p class="services__content-text">
               Czyścimy wszelkie skóry oraz zabezpieczamy je po wykonanej usłudze
               przez co zachowują dłużej swoje właściwości. Korzystamy z środków
@@ -79,7 +71,7 @@
             </p>
           </div>
         </div>
-        <div class="services__content-rent">
+        <div class="services__content-rent show-elem show-elem-bottom">
           <h1 class="services__content-title">Wynajem odkurzacza</h1>
           <div class="elements">
             <p class="services__content-text">
@@ -88,11 +80,9 @@
               możliwość wypożyczenia odkurzacza piorącego marki Profi, Karcher.
               Dzięki tej usłudze jesteś w stanie zaoszczędzić znaczną kwotę.
             </p>
-            <img
-              src="/assets/img/Uslugi/wynajem.jpg"
-              class="services__content-img"
-              alt=""
-            />
+            <div class="services__content-img">
+              <img src="/assets/img/Uslugi/wynajem.jpg" class="" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +91,11 @@
 </template>
 
 <script>
+import showElement from "~/mixins/showElement";
+
 export default {
+  mixins: [showElement],
+
   layout: "services",
 };
 </script>
@@ -136,10 +130,15 @@ export default {
       margin: auto 0;
       text-align: justify;
       font-size: 20px;
+      width: 100%;
     }
 
     &-img {
-      width: 45%;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
     }
 
     .elements {

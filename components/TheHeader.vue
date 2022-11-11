@@ -142,6 +142,18 @@ export default {
         text-align: center;
       }
     }
+
+    @media (max-width: 700px) {
+      &-text {
+        top: 20%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      &-text {
+        top: 15%;
+      }
+    }
   }
 }
 @keyframes fadeIn {

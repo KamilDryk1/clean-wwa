@@ -94,26 +94,28 @@
         </div>
       </div>
     </section>
-    <section class="more">
+    <!-- <section class="more">
       <div class="more__container">
         <div class="more__content">
-          <div class="more__content-offer">
+          <div class="more__content-offer show-elem show-elem-bottom">
             <p>
               Chcesz poznać całość oferowanych przez nas usług? Kliknij tutaj!
             </p>
             <i class="fa-solid fa-clipboard-list"></i>
           </div>
-          <div class="more__content-gallery">
+          <div class="more__content-gallery show-elem show-elem-bottom">
             <p>Całość naszych prac przed i po znajdziesz tutaj!</p>
             <i class="fa-solid fa-camera"></i>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="opinions">
       <div class="opinions__container">
         <div class="opinions__content">
-          <div class="opinions__content-opinion opinion-1">
+          <div
+            class="opinions__content-opinion opinion-1 show-elem show-elem-bottom"
+          >
             <img src="assets/img/HomePage/fb-male.jpg" alt="" />
             <p>
               Korzystałem z usług już wielokrotnie i zawsze byłem w pełni
@@ -122,7 +124,9 @@
             </p>
             <h1>Krzysztof</h1>
           </div>
-          <div class="opinions__content-opinion opinion-2">
+          <div
+            class="opinions__content-opinion opinion-2 show-elem show-elem-bottom"
+          >
             <img src="assets/img/HomePage/fb-famale.jpg" alt="" />
             <p>
               Z usług firmy cleanwwa korzystałam pierwszy raz, ale na pewno nie
@@ -132,7 +136,9 @@
             </p>
             <h1>Joanna</h1>
           </div>
-          <div class="opinions__content-opinion opinion-3">
+          <div
+            class="opinions__content-opinion opinion-3 show-elem show-elem-bottom"
+          >
             <img src="assets/img/HomePage/fb-male.jpg" alt="" />
             <p>
               Jestem bardzo zadowolony z usługi prania tapicerki samochodowej.
@@ -149,8 +155,12 @@
 </template>
 
 <script>
+import showElement from "~/mixins/showElement";
+
 export default {
   name: "IndexPage",
+
+  mixins: [showElement],
 
   data() {
     return {
@@ -188,7 +198,7 @@ export default {
 }
 
 .description {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 
   //   margin-top: 50px;
 
@@ -201,7 +211,7 @@ export default {
     display: flex;
     justify-content: space-between;
     margin: 0 4%;
-    padding-top: 150px;
+    padding-top: 100px;
 
     &-text {
       width: 45%;
@@ -230,11 +240,27 @@ export default {
       }
     }
   }
+
+  @media (max-width: 999px) {
+    &__content {
+      flex-direction: column;
+
+      &-text {
+        width: 100%;
+      }
+
+      &-photo {
+        width: 100%;
+        padding-top: 20px;
+      }
+    }
+  }
 }
 .carousel {
   &__container {
     max-width: 1440px;
     margin: 0 auto;
+    padding-bottom: 100px;
 
     h2 {
       margin: 20px 4%;
