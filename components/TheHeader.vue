@@ -6,7 +6,7 @@
           <video class="vid" autoplay loop muted :src="video"></video>
         </div>
         <div v-else class="header__content-img">
-          <img class="img" :src="img" alt="" />
+          <img class="img" :src="img" alt="pranie" />
         </div>
         <div class="header__content-text">
           <!-- <h1 class="title">CLEAN-WWA</h1> -->
@@ -48,9 +48,9 @@ export default {
     height: 700px;
     background: linear-gradient(
       to right,
-      black 0% 1%,
+      black 0% 15%,
       rgba(0, 0, 0, 0.3),
-      black 99% 100%
+      black 85% 100%
     );
     z-index: 3;
     animation: fadeIn 0.7s ease-in-out forwards;
@@ -81,7 +81,7 @@ export default {
       height: 700px;
 
       .vid {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         height: 700px;
@@ -99,7 +99,7 @@ export default {
       height: 700px;
 
       .img {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         height: 700px;

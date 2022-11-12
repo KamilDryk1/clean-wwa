@@ -250,7 +250,7 @@ export default {
 <style lang="scss" scoped>
 .price {
 	position: relative;
-	z-index: 15;
+	// z-index: 15;
 	background-color: #fff;
 
   &__container {

@@ -5,7 +5,7 @@
         <div class="blog__content-furniture">
           <img
             src="/assets/img/Blog/meble.jpg"
-            alt=""
+            alt="Pranie tapicerki meblowej"
             class="blog__content-furniture-img"
           />
           <div class="blog__content-furniture-text">
@@ -62,7 +62,7 @@
         <div class="blog__content-auto">
           <img
             src="/assets/img/Blog/samochod.jpg"
-            alt=""
+            alt="Pranie tapicerki samochodowej"
             class="blog__content-auto-img"
           />
           <div class="blog__content-auto-text">
@@ -120,8 +120,8 @@
         </div>
         <div class="blog__content-carpet">
           <img
-            src="/assets/img/Blog/dywany.jpg"
-            alt=""
+            src="/assets/img/Blog/dywan.jpg"
+            alt="Pranie dywanów"
             class="blog__content-carpet-img"
           />
           <div class="blog__content-carpet-text">
@@ -204,7 +204,7 @@ export default {
 <style lang="scss" scoped>
 .blog {
   position: relative;
-  z-index: 15;
+  // z-index: 15;
   background-color: #fff;
 
   &__container {

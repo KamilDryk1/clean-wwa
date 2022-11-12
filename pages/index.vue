@@ -40,7 +40,7 @@
                 <div class="swiper__slide-visual">
                   <img
                     src="assets/img/HomePage/carousel-photo-1.jpg"
-                    alt=""
+                    alt="Pranie"
                     class="swiper__element-img"
                   />
                 </div>
@@ -51,7 +51,7 @@
                 <div class="swiper__slide-visual">
                   <img
                     src="assets/img/HomePage/carousel-photo-2.jpg"
-                    alt=""
+                    alt="Pranie"
                     class="swiper__element-img"
                   />
                 </div>
@@ -62,7 +62,7 @@
                 <div class="swiper__slide-visual">
                   <img
                     src="assets/img/HomePage/carousel-photo-3.jpg"
-                    alt=""
+                    alt="Pranie"
                     class="swiper__element-img"
                   />
                 </div>
@@ -73,7 +73,7 @@
                 <div class="swiper__slide-visual">
                   <img
                     src="assets/img/HomePage/carousel-photo-4.jpg"
-                    alt=""
+                    alt="Pranie"
                     class="swiper__element-img"
                   />
                 </div>
@@ -84,7 +84,7 @@
                 <div class="swiper__slide-visual">
                   <img
                     src="assets/img/HomePage/carousel-photo-5.jpg"
-                    alt=""
+                    alt="Pranie"
                     class="swiper__element-img"
                   />
                 </div>
@@ -116,7 +116,7 @@
           <div
             class="opinions__content-opinion opinion-1 show-elem show-elem-bottom"
           >
-            <img src="assets/img/HomePage/fb-male.jpg" alt="" />
+            <img src="assets/img/HomePage/fb-male.jpg" alt="opinia" />
             <p>
               Korzystałem z usług już wielokrotnie i zawsze byłem w pełni
               zadowolony z efektów jak i utrzymania czystości w trakcie pracy.
@@ -127,7 +127,7 @@
           <div
             class="opinions__content-opinion opinion-2 show-elem show-elem-bottom"
           >
-            <img src="assets/img/HomePage/fb-famale.jpg" alt="" />
+            <img src="assets/img/HomePage/fb-famale.jpg" alt="opinia" />
             <p>
               Z usług firmy cleanwwa korzystałam pierwszy raz, ale na pewno nie
               ostatni. Szybko, rzetelnie i punktualnie. Z całego serca mogę
@@ -139,7 +139,7 @@
           <div
             class="opinions__content-opinion opinion-3 show-elem show-elem-bottom"
           >
-            <img src="assets/img/HomePage/fb-male.jpg" alt="" />
+            <img src="assets/img/HomePage/fb-male.jpg" alt="opinia" />
             <p>
               Jestem bardzo zadowolony z usługi prania tapicerki samochodowej.
               Szybki i sprawny kontakt. Firma wyróżniła się punktualnością i
@@ -193,7 +193,7 @@ export default {
 <style lang="scss" scoped>
 .index {
   position: relative;
-  z-index: 15;
+  // z-index: 15;
   background-color: #fff;
 }
 
@@ -395,6 +395,21 @@ export default {
 
     .opinion-2 {
       margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+
+      &-opinion {
+        width: 100%;
+      }
+
+      .opinion-2 {
+        margin-bottom: 30px;
+      }
     }
   }
 }

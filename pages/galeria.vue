@@ -9,7 +9,7 @@
             v-for="item in galleryContent"
             :key="item"
           >
-            <img :src="item" alt="" />
+            <img :src="item" alt="pranie" class="lazyload" />
           </li>
         </ul>
       </div>
@@ -47,7 +47,7 @@ export default {
 <style lang="scss" scoped>
 .gallery {
   position: relative;
-  z-index: 15;
+  // z-index: 15;
   background-color: #fff;
 
   &__container {

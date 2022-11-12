@@ -5,12 +5,54 @@
         <div class="navbar__content">
           <div class="navbar__content__logo">
             <nuxt-link to="/" class="logo"
-              ><img class="logo-sm" src="/assets/img/logo-sm-alt.png" alt=""
-            /><h1 class="title">CLEAN-WWA</h1></nuxt-link>
+              ><img
+                class="logo-sm"
+                src="/assets/img/logo-sm-alt.png"
+                alt="logo"
+              />
+              <h1 class="title">CLEAN-WWA</h1></nuxt-link
+            >
           </div>
           <div class="navbar__content-menu">
             <ul class="navbar__content-menu-list">
-              <div class="navbar__content-overlay"></div>
+              <div
+                class="navbar__content-overlay"
+                v-if="modalStatus === 'active'"
+                @click="closeModal"
+              >
+                <li class="navbar__content-overlay-item">
+                  <nuxt-link
+                    to="/cennik"
+                    class="menu-link"
+                    @click.native="closeModal"
+                    >Cennik</nuxt-link
+                  >
+                </li>
+                <li class="navbar__content-overlay-item">
+                  <nuxt-link
+                    to="/galeria"
+                    class="menu-link"
+                    @click.native="closeModal"
+                    >Galeria</nuxt-link
+                  >
+                </li>
+                <li class="navbar__content-overlay-item">
+                  <nuxt-link
+                    to="/uslugi"
+                    class="menu-link"
+                    @click.native="closeModal"
+                    >Usługi</nuxt-link
+                  >
+                </li>
+                <li class="navbar__content-overlay-item">
+                  <nuxt-link
+                    to="/blog"
+                    class="menu-link"
+                    @click.native="closeModal"
+                    >Blog</nuxt-link
+                  >
+                </li>
+              </div>
               <li class="navbar__content-menu-item">
                 <nuxt-link
                   to="/cennik"
@@ -51,7 +93,11 @@
                   >Kontakt</span
                 >
               </li>
-              <div class="navbar__content-menu-hamburger" @click="openModal">
+              <div
+                class="navbar__content-menu-hamburger"
+                v-if="modalStatus === 'inactive'"
+                @click="openModal"
+              >
                 <div></div>
                 <div></div>
                 <div></div>
@@ -176,6 +222,29 @@ export default {
             border-radius: 10px;
             background-color: white;
           }
+        }
+      }
+    }
+
+    &-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #212121;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+
+      &-item {
+        font-size: 36px;
+
+        .menu-link {
+          text-decoration: none;
+          color: white;
         }
       }
     }

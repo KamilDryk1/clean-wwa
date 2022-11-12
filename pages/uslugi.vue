@@ -18,7 +18,11 @@
               zajmuje od kilku do kilkunastu godzin.
             </p>
             <div class="services__content-img">
-              <img src="/assets/img/Uslugi/meblowa.jpg" class="" alt="" />
+              <img
+                src="/assets/img/Uslugi/meblowa.jpg"
+                class=""
+                alt="Tapicerka meblowa"
+              />
             </div>
           </div>
         </div>
@@ -26,7 +30,7 @@
           <h1 class="services__content-title">Pranie wykładzin i dywanów</h1>
           <div class="elements">
             <div class="services__content-img">
-              <img src="/assets/img/Uslugi/dywany.jpg" class="" alt="" />
+              <img src="/assets/img/Uslugi/dywany.jpg" class="" alt="Dywan" />
             </div>
             <p class="services__content-text">
               Pranie odbywa się metodą ekstrakcyjną, przy użyciu skutecznych
@@ -51,7 +55,11 @@
               wykonujemy u klienta (potrzebny dostęp do prądu).
             </p>
             <div class="services__content-img">
-              <img src="/assets/img/Uslugi/auto.jpg" class="" alt="" />
+              <img
+                src="/assets/img/Uslugi/auto.jpg"
+                class=""
+                alt="Tapicerka samochodowa"
+              />
             </div>
           </div>
         </div>
@@ -61,7 +69,11 @@
           </h1>
           <div class="elements">
             <div class="services__content-img">
-              <img src="/assets/img/Uslugi/skora.jpg" class="" alt="" />
+              <img
+                src="/assets/img/Uslugi/skora.jpg"
+                class=""
+                alt="Tapicerka skórzana"
+              />
             </div>
             <p class="services__content-text">
               Czyścimy wszelkie skóry oraz zabezpieczamy je po wykonanej usłudze
@@ -81,7 +93,11 @@
               Dzięki tej usłudze jesteś w stanie zaoszczędzić znaczną kwotę.
             </p>
             <div class="services__content-img">
-              <img src="/assets/img/Uslugi/wynajem.jpg" class="" alt="" />
+              <img
+                src="/assets/img/Uslugi/wynajem.jpg"
+                class=""
+                alt="Odkurzacz"
+              />
             </div>
           </div>
         </div>
@@ -103,7 +119,7 @@ export default {
 <style lang="scss" scoped>
 .services {
   position: relative;
-  z-index: 15;
+  // z-index: 15;
   background-color: #fff;
 
   &__container {
