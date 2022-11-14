@@ -165,6 +165,17 @@ export default {
     &-rent {
       padding-bottom: 100px;
     }
+
+    @media (max-width: 700px) {
+      .elements {
+        display: flex;
+        flex-direction: column;
+
+        img {
+          padding: 15px 0;
+        }
+      }
+    }
   }
 }
 </style>
