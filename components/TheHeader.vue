@@ -28,23 +28,6 @@ export default {
   data() {
     return {};
   },
-
-  methods: {
-    checkWidth() {
-      let width = window.innerWidth;
-
-      if (width < 1000) {
-        this.showVideo = false;
-      } else {
-        this.showVideo = true;
-      }
-    },
-  },
-  mounted() {
-    this.checkWidth();
-
-    window.addEventListener("resize", this.checkWidth);
-  },
 };
 </script>
 

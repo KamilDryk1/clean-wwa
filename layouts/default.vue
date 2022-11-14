@@ -21,7 +21,7 @@ export default {
 
       if (width < 1000) {
         this.video = null;
-        this.img = "assets/img/HomePage/background-img.jpeg";
+        this.img = "assets/img/HomePage/background-img.jpg";
       } else {
         this.video = "assets/video/HomePage/background-video.mp4";
         this.img = null;
