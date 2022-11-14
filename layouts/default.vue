@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar :video="video" :img="img" />
+    <Navbar :video="video" :img="img" :title="title" :subtitle="subtitle" />
     <Nuxt />
     <Footer />
   </div>
@@ -12,6 +12,9 @@ export default {
     return {
       video: "assets/video/HomePage/background-video.mp4",
       img: null,
+      title:
+        "Pranie tapicerki meblowej i samochodowej na terenie Warszawy i okolic.",
+      subtitle: "Poznaj naszą ofertę!",
     };
   },
 

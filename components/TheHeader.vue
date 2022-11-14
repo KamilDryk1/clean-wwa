@@ -11,10 +11,9 @@
         <div class="header__content-text">
           <!-- <h1 class="title">CLEAN-WWA</h1> -->
           <h2 class="subtitle">
-            Pranie tapicerki meblowej i samochodowej na terenie Warszawy i
-            okolic.
+            {{ title }}
           </h2>
-          <p>Poznaj naszą ofertę!</p>
+          <p>{{ subtitle }}</p>
         </div>
       </div>
     </div>
@@ -24,7 +23,7 @@
 
 <script>
 export default {
-  props: ["video", "img"],
+  props: ["video", "img", "title", "subtitle"],
   data() {
     return {};
   },

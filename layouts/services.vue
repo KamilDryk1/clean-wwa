@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar :img="img" />
+    <Navbar :img="img" :title="title" />
     <Nuxt />
     <Footer />
   </div>
@@ -12,6 +12,7 @@ export default {
     return {
       video: null,
       img: "assets/img/Uslugi/uslugi-img.jpg",
+      title: "Usługi",
     };
   },
 };

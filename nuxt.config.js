@@ -26,6 +26,10 @@ export default {
         name: "title",
         content: "Pranie tapicerki - Clean WWA",
       },
+      {
+        "http-equiv": "Content-Security-Policy",
+        content: "upgrade-insecure-requests",
+      },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
   },
