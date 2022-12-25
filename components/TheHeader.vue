@@ -52,7 +52,7 @@ export default {
       black 85% 100%
     );
     z-index: 3;
-    animation: fadeIn 0.7s ease-in-out forwards;
+    animation: fadeIn 1.3s ease-in-out forwards;
   }
 
   @media (max-width: 1440px) {
