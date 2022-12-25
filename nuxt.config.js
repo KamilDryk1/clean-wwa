@@ -47,7 +47,7 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [["vue-scrollto/nuxt", { duration: 1000, easing: "ease-in-out" }]],
+  modules: [["vue-scrollto/nuxt", { duration: 1000, easing: "ease-in-out" }], '@nuxtjs/sitemap'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
@@ -56,6 +56,10 @@ export default {
     UserAgent: "*",
     Allow: "/",
     Sitemap: "https://qarbon.pl/sitemap.xml",
+  },
+
+  sitemap: {
+	hostname: 'https://cleanwwa.pl',
   },
 
   router: {
