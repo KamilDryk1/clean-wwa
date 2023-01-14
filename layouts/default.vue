@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar :video="video" :img="img" :title="title" :subtitle="subtitle" />
+    <Navbar :video="video" :img="img" :title="title" :subtitle="subtitle" :tel="tel" />
     <Nuxt />
     <Footer />
   </div>
@@ -15,6 +15,7 @@ export default {
       title:
         "Pranie tapicerki meblowej i samochodowej na terenie Warszawy i okolic.",
       subtitle: "Poznaj naszą ofertę!",
+	  tel: "tel. +48 733 740 112"
     };
   },
 
