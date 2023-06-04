@@ -107,13 +107,13 @@
         </div>
       </div>
     </nav>
-    <TheHeader :video="video" :img="img" :title="title" :subtitle="subtitle" />
+    <TheHeader :video="video" :img="img" :title="title" :subtitle="subtitle" :tel="tel" />
   </div>
 </template>
 
 <script>
 export default {
-  props: ["video", "img", "title", "subtitle"],
+  props: ["video", "img", "title", "subtitle", "tel"],
   data() {
     return {
       modalStatus: "inactive",

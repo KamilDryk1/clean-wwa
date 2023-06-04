@@ -14,6 +14,7 @@
             {{ title }}
           </h2>
           <p>{{ subtitle }}</p>
+		  <p class="tel">{{ tel }}</p>
         </div>
       </div>
     </div>
@@ -23,7 +24,7 @@
 
 <script>
 export default {
-  props: ["video", "img", "title", "subtitle"],
+  props: ["video", "img", "title", "subtitle", "tel"],
   data() {
     return {};
   },
@@ -52,7 +53,7 @@ export default {
       black 85% 100%
     );
     z-index: 3;
-    animation: fadeIn 0.7s ease-in-out forwards;
+    animation: fadeIn 1.3s ease-in-out forwards;
   }
 
   @media (max-width: 1440px) {
@@ -140,6 +141,11 @@ export default {
         font-size: 26px;
         text-align: center;
       }
+
+	  .tel {
+		  font-size: 18px;
+		  margin-top: 5px;
+	  }
     }
 
     @media (max-width: 700px) {

@@ -1,7 +1,30 @@
 // @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
-@import url("https://db.onlinewebfonts.com/c/7f05d48f4a28cc6bd2f81faa3c7551f1?family=DIN+Next+LT+Pro+Medium+Cond");
-@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;700&display=swap");
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+// @import url("https://db.onlinewebfonts.com/c/7f05d48f4a28cc6bd2f81faa3c7551f1?family=DIN+Next+LT+Pro+Medium+Cond");
+// @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;700&display=swap");
+
+@font-face {
+	font-family: 'Saira Condensed';
+	src: url('../fonts/SairaCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Saira Condensed';
+	font-weight: 300;
+	src: url('../fonts/SairaCondensed-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Saira Condensed';
+	font-weight: 700;
+	src: url('../fonts/SairaCondensed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Saira Condensed';
+	font-weight: 900;
+	src: url('../fonts/SairaCondensed-Black.ttf') format('truetype');
+}
 
 * {
   box-sizing: border-box;
