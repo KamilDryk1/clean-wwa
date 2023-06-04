@@ -32,6 +32,10 @@ export default {
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
+    script: [{
+      src: "https://www.googletagmanager.com/gtag/js?id=G-RZXEW35YZW",
+      async: true
+    }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
