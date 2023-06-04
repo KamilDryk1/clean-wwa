@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar :img="img" :title="title" />
+    <Navbar :img="img" :title="title" :subtitle="subtitle" />
     <Nuxt />
     <Footer />
   </div>
@@ -13,6 +13,7 @@ export default {
       video: null,
       img: "assets/img/Galeria/gallery-img.jpg",
       title: "Galeria",
+      subtitle: "Piękno i czystość łączą siły - odkryj nasze prace."
     };
   },
 };
