@@ -110,47 +110,7 @@
 		</div>
 	  </div>
 	</section> -->
-	<section class="opinions">
-	  <div class="opinions__container">
-		<div class="opinions__content">
-		  <div
-			class="opinions__content-opinion opinion-1 show-elem show-elem-bottom"
-		  >
-			<img src="assets/img/HomePage/fb-male.jpg" alt="opinia" />
-			<p>
-			  Korzystałem z usług już wielokrotnie i zawsze byłem w pełni
-			  zadowolony z efektów jak i utrzymania czystości w trakcie pracy.
-			  Profesjonalna obsługa, a ceny konkurencyjne.
-			</p>
-			<h1>Krzysztof</h1>
-		  </div>
-		  <div
-			class="opinions__content-opinion opinion-2 show-elem show-elem-bottom"
-		  >
-			<img src="assets/img/HomePage/fb-famale.jpg" alt="opinia" />
-			<p>
-			  Z usług firmy cleanwwa korzystałam pierwszy raz, ale na pewno nie
-			  ostatni. Szybko, rzetelnie i punktualnie. Z całego serca mogę
-			  polecić usługi prania tapicerki meblowej, mój narożnik wygląda jak
-			  nowy i bardzo ładnie pachnie. Polecam!!!
-			</p>
-			<h1>Joanna</h1>
-		  </div>
-		  <div
-			class="opinions__content-opinion opinion-3 show-elem show-elem-bottom"
-		  >
-			<img src="assets/img/HomePage/fb-male.jpg" alt="opinia" />
-			<p>
-			  Jestem bardzo zadowolony z usługi prania tapicerki samochodowej.
-			  Szybki i sprawny kontakt. Firma wyróżniła się punktualnością i
-			  sprawnie uporała się nawet z najtrudniejszymi plamami i
-			  nieprzyjemnym zapachem. Polecam.
-			</p>
-			<h1>Marcin</h1>
-		  </div>
-		</div>
-	  </div>
-	</section>
+	<Opinions />
   </div>
 </template>
 
@@ -184,26 +144,8 @@ export default {
 			slidesPerView: 1.6,
 		  },
 		},
-	  },
-
-	  key: "AIzaSyAe1LnA6cdrmxUveswSAfS7iITN2ae4hmw",
+	  }
 	};
-  },
-
-  methods: {
-	async getReviews() {
-		const placeId = "ChIJp1NjOeahGEcRY7ycB0FsQ5E";
-
-		const url = `http://localhost:3000/api/maps/api/place/details/json?key=${this.key}&place_id=${placeId}&fields=name,reviews`;
-
-		const response = await fetch(url);
-
-		console.log(response);
-	}
-  },
-
-  mounted() {
-	this.getReviews()
   }
 };
 </script>
@@ -381,53 +323,6 @@ export default {
 
 	&-gallery:hover {
 	  background-color: #00b1b8;
-	}
-  }
-}
-.opinions {
-  width: 100%;
-  background-color: #212121;
-  color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  &__container {
-	max-width: 1440px;
-	margin: 0 auto;
-  }
-
-  &__content {
-	margin: 0 4%;
-	display: flex;
-	justify-content: space-around;
-
-	&-opinion {
-	  width: 25%;
-	  text-align: center;
-
-	  img {
-		max-width: 100px;
-		border-radius: 50%;
-	  }
-	}
-
-	.opinion-2 {
-	  margin-top: 30px;
-	}
-  }
-
-  @media (max-width: 600px) {
-	&__content {
-	  flex-direction: column;
-	  align-items: center;
-
-	  &-opinion {
-		width: 100%;
-	  }
-
-	  .opinion-2 {
-		margin-bottom: 30px;
-	  }
 	}
   }
 }
