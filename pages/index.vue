@@ -4,7 +4,7 @@
 	  <div class="description__container">
 		<div class="description__content">
 		  <div class="description__content-text">
-			<h2>Pranie tapicerki nr 1 w Warszawie!</h2>
+			<h2>Dlaczego my?</h2>
 			<p>
 			  Jesteśmy profesjonalną firmą zajmującą się praniem tapicerki
 			  meblowej i samochodowej, oraz wykładzin na terenie Warszawy i
@@ -20,8 +20,8 @@
 		  </div>
 		  <div class="description__content-photo">
 			<img
-			  src="assets/img/HomePage/description-img.jpg"
-			  alt="Pranie tapicerki bagażnika"
+			  src="assets/img/HomePage/description-2.jpg"
+			  alt="Pranie tapicerki meblowej"
 			/>
 		  </div>
 		</div>
@@ -235,7 +235,7 @@ export default {
 	position: relative;
 	max-width: 350px;
 	height: 350px;
-	border-radius: 30px;
+	// border-radius: 50%;
 	overflow: hidden;
   }
 
