@@ -19,7 +19,7 @@
               sprzętu marki Prochem, Karcher i najlepszej chemii dostępnej na
               rynku.
             </p>
-            <div class="blog__content-furniture-more" :class="furnitureOn">
+            <div class="blog__content-furniture-more" :class="furnitureOn" v-if="furnitureOn">
               <h3>Pranie tapicerki metodą ekstrakcyjną</h3>
               <p>
                 Tapicerka meblowa gromadzi na sobie również inne niewidoczne dla
@@ -54,9 +54,9 @@
                 Zapraszamy do kontaktu!
               </p>
             </div>
-            <!-- <button class="blog__content-furniture-btn" @click="showFurniture">
+            <button class="blog__content-furniture-btn" @click="showFurniture" v-if="!furnitureOn">
 			  Czytaj więcej
-			</button> -->
+			</button>
           </div>
         </div>
         <div class="blog__content-auto">
@@ -81,7 +81,7 @@
               przywrócić poprzedni stan, a niekiedy można permanentnie uszkodzić
               tapicerkę.
             </p>
-            <div class="blog__content-auto-more" :class="carOn">
+            <div class="blog__content-auto-more" :class="carOn" v-if="carOn">
               <h3>Czy zlecenie profesjonaliście jest korzystniejsze?</h3>
               <p>
                 Niektóre czynności w czyszczeniu samochodu mogą być stosunkowe
@@ -113,9 +113,9 @@
                 narzędzia.
               </p>
             </div>
-            <!-- <button class="blog__content-furniture-btn" @click="showFurniture">
+            <button class="blog__content-furniture-btn" @click="showCar" v-if="!carOn">
 			  Czytaj więcej
-			</button> -->
+			</button>
           </div>
         </div>
         <div class="blog__content-carpet">
@@ -136,7 +136,7 @@
               zalecaną jest czyszczenie ekstrakcyjne. Po wyżej wymienionym
               zabiegu Twoja wykładzina, lub dywan odzyska dawny blask.
             </p>
-            <div class="blog__content-auto-more" :class="carpetOn">
+            <div class="blog__content-auto-more" :class="carpetOn" v-if="carpetOn">
               <h3>Etapy prania:</h3>
               <ul>
                 <li>Dokładne odkurzanie wraz z zebraniem luźnych zabrudzeń,</li>
@@ -162,9 +162,9 @@
                 tuszu, smaru, gumy poprzez dobór odpowiednich odplamiaczy.
               </p>
             </div>
-            <!-- <button class="blog__content-furniture-btn" @click="showFurniture">
+            <button class="blog__content-furniture-btn" @click="showCarpet" v-if="!carpetOn">
 			  Czytaj więcej
-			</button> -->
+			</button>
           </div>
         </div>
       </div>
@@ -182,14 +182,14 @@ export default {
 
   data() {
     return {
-      furnitureOn: "true",
+      furnitureOn: false,
       carOn: false,
       carpetOn: false,
     };
   },
   methods: {
     showFurniture() {
-      this.furnitureOn = "true";
+      this.furnitureOn = true;
     },
     showCar() {
       this.carOn = true;
@@ -219,12 +219,38 @@ export default {
     background-color: #fff;
     z-index: 5;
 
+	h1 {
+		font-size: 26px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	button {
+		background-color: #03989e;
+		border: none;
+		color: white;
+		width: 120px;
+		height: 30px;
+		font-size: 16px;
+		font-family: Saira Condensed, sans-serif;
+		cursor: pointer;
+		border-radius: 15px;
+		margin-top: 10px;
+	}
+
     .false {
       display: none;
     }
 
     &-furniture {
       padding-top: 100px;
+	  min-height: 500px;
 
       &-img {
         float: right;
@@ -240,6 +266,7 @@ export default {
 
     &-auto {
       padding-top: 100px;
+	  min-height: 500px;
 
       &-img {
         float: right;
@@ -250,6 +277,7 @@ export default {
     &-carpet {
       padding-top: 100px;
       padding-bottom: 100px;
+	  min-height: 500px;
 
       &-img {
         float: right;
