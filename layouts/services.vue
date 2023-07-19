@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       video: null,
-      img: "assets/img/Uslugi/uslugi-img.jpg",
+      img: "/assets/img/Uslugi/uslugi-img.jpg",
       title: "Usługi",
       subtitle: "Nasze usługi - profesjonalizm, który spełnia Twoje oczekiwania."
     };

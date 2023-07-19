@@ -6,24 +6,28 @@
 @font-face {
 	font-family: 'Saira Condensed';
 	src: url('../fonts/SairaCondensed-Regular.ttf') format('truetype');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Saira Condensed';
 	font-weight: 300;
 	src: url('../fonts/SairaCondensed-Light.ttf') format('truetype');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Saira Condensed';
 	font-weight: 700;
 	src: url('../fonts/SairaCondensed-Bold.ttf') format('truetype');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Saira Condensed';
 	font-weight: 900;
 	src: url('../fonts/SairaCondensed-Black.ttf') format('truetype');
+	font-display: swap;
 }
 
 * {

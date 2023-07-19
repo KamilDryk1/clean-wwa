@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       video: null,
-      img: "assets/img/Galeria/gallery-img.jpg",
+      img: "/assets/img/Galeria/gallery-img.jpg",
       title: "Galeria",
       subtitle: "Piękno i czystość łączą siły - odkryj nasze prace."
     };

@@ -3,7 +3,7 @@
     <div class="footer__container">
       <div class="footer__content">
         <div class="footer__content-logo">
-          <img src="assets/img/logo.jpg" alt="logo" />
+          <img src="/assets/img/logo.jpg" alt="logo" />
         </div>
         <div class="footer__content-contact">
           <h1>Adres i dane kontaktowe</h1>
@@ -14,10 +14,10 @@
         </div>
         <div class="footer__content-socials">
           <a href="https://www.facebook.com/CleanWwa"
-            ><img class="social" src="assets/img/facebook.png" alt="facebook"
+            ><img class="social" src="/assets/img/facebook.png" alt="facebook"
           /></a>
           <a href="https://www.instagram.com/pranie_tapicerki_cleanwwa/"
-            ><img class="social" src="assets/img/instagram.png" alt="instagram"
+            ><img class="social" src="/assets/img/instagram.png" alt="instagram"
           /></a>
         </div>
       </div>

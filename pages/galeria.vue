@@ -2,7 +2,7 @@
   <section class="gallery">
     <div class="gallery__container">
       <div class="gallery__content">
-        <h1 class="gallery__content-title">Efekty naszej pracy</h1>
+        <!-- <h1 class="gallery__content-title">Efekty naszej pracy</h1> -->
         <ul class="gallery__content-list">
           <li
             class="gallery__content-element"
@@ -38,6 +38,10 @@ export default {
         "/assets/img/Galeria/img11.jpg",
         "/assets/img/Galeria/img12.jpg",
         "/assets/img/Galeria/img13.jpg",
+        "/assets/img/Galeria/img14.jpg",
+        "/assets/img/Galeria/img15.jpg",
+        "/assets/img/Galeria/img16.jpg",
+        "/assets/img/Galeria/img17.jpg",
       ],
     };
   },

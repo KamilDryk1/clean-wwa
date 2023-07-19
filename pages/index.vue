@@ -20,7 +20,7 @@
 		  </div>
 		  <div class="description__content-photo">
 			<img
-			  src="assets/img/HomePage/description-2.jpg"
+			  src="/assets/img/HomePage/description-2.jpg"
 			  alt="Pranie tapicerki meblowej"
 			/>
 		  </div>
@@ -39,7 +39,7 @@
 			  <div class="swiper__element">
 				<div class="swiper__slide-visual">
 				  <img
-					src="assets/img/HomePage/carousel-photo-1.jpg"
+					src="/assets/img/HomePage/carousel-photo-1.jpg"
 					alt="Pranie"
 					class="swiper__element-img"
 				  />
@@ -50,7 +50,7 @@
 			  <div class="swiper__element">
 				<div class="swiper__slide-visual">
 				  <img
-					src="assets/img/HomePage/carousel-photo-2.jpg"
+					src="/assets/img/HomePage/carousel-photo-8.jpg"
 					alt="Pranie"
 					class="swiper__element-img"
 				  />
@@ -61,7 +61,7 @@
 			  <div class="swiper__element">
 				<div class="swiper__slide-visual">
 				  <img
-					src="assets/img/HomePage/carousel-photo-3.jpg"
+					src="/assets/img/HomePage/carousel-photo-3.jpg"
 					alt="Pranie"
 					class="swiper__element-img"
 				  />
@@ -72,7 +72,7 @@
 			  <div class="swiper__element">
 				<div class="swiper__slide-visual">
 				  <img
-					src="assets/img/HomePage/carousel-photo-4.jpg"
+					src="/assets/img/HomePage/carousel-photo-7.jpg"
 					alt="Pranie"
 					class="swiper__element-img"
 				  />
@@ -83,7 +83,40 @@
 			  <div class="swiper__element">
 				<div class="swiper__slide-visual">
 				  <img
-					src="assets/img/HomePage/carousel-photo-5.jpg"
+					src="/assets/img/HomePage/carousel-photo-5.jpg"
+					alt="Pranie"
+					class="swiper__element-img"
+				  />
+				</div>
+			  </div>
+			</swiper-slide>
+			<swiper-slide>
+			  <div class="swiper__element">
+				<div class="swiper__slide-visual">
+				  <img
+					src="/assets/img/HomePage/carousel-photo-6.jpg"
+					alt="Pranie"
+					class="swiper__element-img"
+				  />
+				</div>
+			  </div>
+			</swiper-slide>
+			<swiper-slide>
+			  <div class="swiper__element">
+				<div class="swiper__slide-visual">
+				  <img
+					src="/assets/img/HomePage/carousel-photo-4.jpg"
+					alt="Pranie"
+					class="swiper__element-img"
+				  />
+				</div>
+			  </div>
+			</swiper-slide>
+			<swiper-slide>
+			  <div class="swiper__element">
+				<div class="swiper__slide-visual">
+				  <img
+					src="/assets/img/HomePage/carousel-photo-2.jpg"
 					alt="Pranie"
 					class="swiper__element-img"
 				  />

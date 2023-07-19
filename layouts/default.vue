@@ -17,7 +17,7 @@
 export default {
   data() {
     return {
-      video: "assets/video/HomePage/background-video.mp4",
+      video: "/assets/video/HomePage/background-video.mp4",
       img: null,
       title:
         "Pranie tapicerki meblowej i samochodowej na terenie Warszawy i okolic.",
@@ -33,9 +33,9 @@ export default {
 
       if (width < 1000) {
         this.video = null;
-        this.img = "assets/img/HomePage/background-img.jpg";
+        this.img = "/assets/img/HomePage/background-img.jpg";
       } else {
-        this.video = "assets/video/HomePage/background-video.mp4";
+        this.video = "/assets/video/HomePage/background-video.mp4";
         this.img = null;
       }
     },

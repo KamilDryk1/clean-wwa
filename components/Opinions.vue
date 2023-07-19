@@ -11,7 +11,7 @@
 							<p class="name">{{ opinion.name }}</p>
 						</div>
 						<div class="stars">
-							<img v-for="n in 5" :key="n" src="assets/img/opinie/star.png" alt="">
+							<img v-for="n in 5" :key="n" src="/assets/img/opinie/star.png" alt="">
 						</div>
 						<p class="poz"><span>Pozytywne: </span>{{ opinion.poz }}</p>
 						<p class="opinion">{{ opinion.opinion }}</p>
@@ -35,7 +35,7 @@ export default {
 			spaceBetween: 30,
 			centeredSlides: false,
 			autoplay: {
-			  delay: 3000,
+			  delay: 4000,
 			  disableOnInteraction: false,
 			},
 			loop: true,
@@ -52,15 +52,15 @@ export default {
 			},
 		  },
 		  opinionList: [
-			{img: "assets/img/opinie/mateusz.png", name: "Mateusz Wiek", poz: "Czas reakcji, Jakość, Profesjonalizm, Wartość", opinion: "Polecam CLEAN WWA 100% Szybko, sprawnie. Usługa na wysokim poziomie. Telefon koło południa i za godzinę mebelki już się piorą:) A to wszystko w przystępnej cenie!!! 10000% Polecam!!!", service: "Czyszczenie tapicerki"},
-			{img: "assets/img/opinie/vitalij.png", name: "Vitaliy Krupin", poz: "Jakość, Profesjonalizm, Wartość", opinion: "Polecam usługi pana Wojciecha, pełen profezjonalizm i wysoka jakość wykonania prac. Bardzo starannie wyczyszczona cała tapicerka w samochodzie, teraz samochód wygląda jak nowy. Cena rozsądna za dany zakres prac i trwałość wykonania. Polecam!!!", service: "Czyszczenie tapicerki"},
-			{img: "assets/img/opinie/zwyrol2.png", name: "Radosław Olek", poz: "Profesjonalizm", opinion: "Usługa została wykonana należycie w przyzwoitej cenie.", service: ""},
-			{img: "assets/img/opinie/barrbrra.png", name: "Barrbrra", poz: "Jakość, Profesjonalizm", opinion: "Czyszczenie foteli samochodowych - usług wykonana bardzo starannie, fotele jak nowe :) Pan wykonujący usługę bardzo miły, punktualny - kontakt bez problemu. POLECAM i z pewnością jeszcze skorzystam :)", service: "Czyszczenie tapicerki"},
-			{img: "assets/img/opinie/eliza.png", name: "Eliza Skrodzka", poz: "Jakość, Profesjonalizm, Punktualność", opinion: "Cena adekwatna do czasu, sprzętu i wysiłku włożonego w pracę. Komunikacja bez zarzutów. Kanapa i krzesła wyglądają jak nowe. Świetna robota. Polecam i chętnie skorzystam jeszcze raz.", service: "Czyszczenie tapicerki"},
-			{img: "assets/img/opinie/karol.png", name: "Karol Wołek", poz: "Jakość", opinion: "Polecam :) Narożnik starannie wyczyszczony jestem zadowolony z usługi, na pewno w przyszłości skorzystam ponownie.", service: "Czyszczenie tapicerki"},
-			{img: "assets/img/opinie/wioleta.png", name: "Wioleta Daniluk", poz: "Profesjonalizm", opinion: "Skorzystałam z usługi prania narożnika i krzeseł, narożnik był bardzo zabrudzony. Usługa wykonana bardzo profesjonalnie i starannie, jestem bardzo zadowolona.", service: "Czyszczenie tapicerki"},
-			{img: "assets/img/opinie/justyna.png", name: "Justyna Augustyniak", poz: "Jakość, Profesjonalizm, Punktualność, Wartość", opinion: "Bardzo polecam. Kanapa po czyszczeniu  w idealnym stanie jak nowa 🌸 warto skorzystać z usług mając w domu zwierzęta.", service: "Usuwanie plam i nieprzyjemnych zapachów po zwierzętach domowych"},
-			{img: "assets/img/opinie/busio.png", name: "B u s i o", poz: "Jakość, Punktualność", opinion: "Cała usługa wykonana profesjonalnie i na czas w przystępnej cenie. Skorzystam jeszcze na pewno, polecam", service: ""}
+			{img: "/assets/img/opinie/mateusz.png", name: "Mateusz Wiek", poz: "Czas reakcji, Jakość, Profesjonalizm, Wartość", opinion: "Polecam CLEAN WWA 100% Szybko, sprawnie. Usługa na wysokim poziomie. Telefon koło południa i za godzinę mebelki już się piorą:) A to wszystko w przystępnej cenie!!! 10000% Polecam!!!", service: "Czyszczenie tapicerki"},
+			{img: "/assets/img/opinie/vitalij.png", name: "Vitaliy Krupin", poz: "Jakość, Profesjonalizm, Wartość", opinion: "Polecam usługi pana Wojciecha, pełen profezjonalizm i wysoka jakość wykonania prac. Bardzo starannie wyczyszczona cała tapicerka w samochodzie, teraz samochód wygląda jak nowy. Cena rozsądna za dany zakres prac i trwałość wykonania. Polecam!!!", service: "Czyszczenie tapicerki"},
+			{img: "/assets/img/opinie/zwyrol2.png", name: "Radosław Olek", poz: "Profesjonalizm", opinion: "Usługa została wykonana należycie w przyzwoitej cenie.", service: ""},
+			{img: "/assets/img/opinie/barrbrra.png", name: "Barrbrra", poz: "Jakość, Profesjonalizm", opinion: "Czyszczenie foteli samochodowych - usług wykonana bardzo starannie, fotele jak nowe :) Pan wykonujący usługę bardzo miły, punktualny - kontakt bez problemu. POLECAM i z pewnością jeszcze skorzystam :)", service: "Czyszczenie tapicerki"},
+			{img: "/assets/img/opinie/eliza.png", name: "Eliza Skrodzka", poz: "Jakość, Profesjonalizm, Punktualność", opinion: "Cena adekwatna do czasu, sprzętu i wysiłku włożonego w pracę. Komunikacja bez zarzutów. Kanapa i krzesła wyglądają jak nowe. Świetna robota. Polecam i chętnie skorzystam jeszcze raz.", service: "Czyszczenie tapicerki"},
+			{img: "/assets/img/opinie/karol.png", name: "Karol Wołek", poz: "Jakość", opinion: "Polecam :) Narożnik starannie wyczyszczony jestem zadowolony z usługi, na pewno w przyszłości skorzystam ponownie.", service: "Czyszczenie tapicerki"},
+			{img: "/assets/img/opinie/wioleta.png", name: "Wioleta Daniluk", poz: "Profesjonalizm", opinion: "Skorzystałam z usługi prania narożnika i krzeseł, narożnik był bardzo zabrudzony. Usługa wykonana bardzo profesjonalnie i starannie, jestem bardzo zadowolona.", service: "Czyszczenie tapicerki"},
+			{img: "/assets/img/opinie/justyna.png", name: "Justyna Augustyniak", poz: "Jakość, Profesjonalizm, Punktualność, Wartość", opinion: "Bardzo polecam. Kanapa po czyszczeniu  w idealnym stanie jak nowa 🌸 warto skorzystać z usług mając w domu zwierzęta.", service: "Usuwanie plam i nieprzyjemnych zapachów po zwierzętach domowych"},
+			{img: "/assets/img/opinie/busio.png", name: "B u s i o", poz: "Jakość, Punktualność", opinion: "Cała usługa wykonana profesjonalnie i na czas w przystępnej cenie. Skorzystam jeszcze na pewno, polecam", service: ""}
 		  ]
 		};
   }
