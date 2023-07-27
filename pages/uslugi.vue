@@ -83,22 +83,39 @@
             </p>
           </div>
         </div>
+		<div class="services__content-floor show-elem show-elem-bottom">
+          <h1 class="services__content-title">
+            Czyszczenie posadzek
+          </h1>
+          <div class="elements">
+			  <p class="services__content-text">
+				  W naszej firmie specjalizujemy się w kompleksowym i profesjonalnym czyszczeniu posadzek zarówno w budynkach firmowych, jak i prywatnych domach. Dzięki wieloletniemu doświadczeniu oraz zastosowaniu najnowocześniejszych technik i środków czyszczących, gwarantujemy osiągnięcie doskonałych efektów. Czyścimy przede wszystkim: gres, granit, posadzki przemysłowe, lastryko oraz PCV.. Już dzisiaj zapoznaj się z naszą ofertą na czyszczenie posadzek. Zadbaj o swoje posadzki.
+			  </p>
+            <div class="services__content-img">
+              <img
+                src="/assets/img/Uslugi/posadzki.jpg"
+                class=""
+                alt="Czyszczenie posadzek"
+              />
+            </div>
+          </div>
+        </div>
         <div class="services__content-rent show-elem show-elem-bottom">
           <h1 class="services__content-title">Wynajem odkurzacza</h1>
           <div class="elements">
-            <p class="services__content-text">
-              Również możesz wyprać we własnym zakresie tapicerkę meblową,
-              wykładziny, dywany bez pomocy profesjonalisty. Wszystko przez
-              możliwość wypożyczenia odkurzacza piorącego marki Profi, Karcher.
-              Dzięki tej usłudze jesteś w stanie zaoszczędzić znaczną kwotę.
-            </p>
-            <div class="services__content-img">
-              <img
-                src="/assets/img/Uslugi/wynajem.jpg"
-                class=""
-                alt="Odkurzacz"
-              />
-            </div>
+			  <div class="services__content-img">
+				  <img
+				  src="/assets/img/Uslugi/wynajem.jpg"
+				  class=""
+				  alt="Odkurzacz"
+				  />
+				</div>
+				<p class="services__content-text">
+				  Również możesz wyprać we własnym zakresie tapicerkę meblową,
+				  wykładziny, dywany bez pomocy profesjonalisty. Wszystko przez
+				  możliwość wypożyczenia odkurzacza piorącego marki Profi, Karcher.
+				  Dzięki tej usłudze jesteś w stanie zaoszczędzić znaczną kwotę.
+				</p>
           </div>
         </div>
       </div>

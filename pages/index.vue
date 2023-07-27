@@ -4,18 +4,10 @@
 	  <div class="description__container">
 		<div class="description__content">
 		  <div class="description__content-text">
-			<h2>Dlaczego my?</h2>
+			<h2>O nas</h2>
 			<p>
-			  Jesteśmy profesjonalną firmą zajmującą się praniem tapicerki
-			  meblowej i samochodowej, oraz wykładzin na terenie Warszawy i
-			  okolic. Posiadamy wieloletnie doświadczenie w przywracaniu
-			  pierwotnego stanu Państwa mebli. Pracujemy wyłącznie na najlepszym
-			  sprzęcie wiodących marek Prochem, Karcher. Stosujemy najlepszą
-			  chemię, która pozwoli usunąć uporczywe plamy, oraz nieprzyjemne
-			  zapachy. Nasze kompetencje, oraz liczne specjalistyczne kursy
-			  pozwalają dostarczać Państwu usługi na najwyższym poziomie.
-			  Zachęcamy do skorzystania z naszych usług oraz do zapoznania się z
-			  cennikiem.
+				Jesteśmy profesjonalną firmą zajmującą się praniem tapicerki meblowej, samochodowej, oraz wykładzin na terenie Warszawy i okolic. Posiadamy wieloletnie doświadczenie w przywracaniu pierwotnego stanu Państwa mebli. Dzięki naszej usłudze możesz usunąć głęboko osadzone plamy, sierść zwierząt domowych, nieprzyjemne zapachy i roztocza z mebli, oraz innych powierzchni. 
+				Rezultat? Dogłębnie czyste meble i zdrowszy dom.
 			</p>
 		  </div>
 		  <div class="description__content-photo">
