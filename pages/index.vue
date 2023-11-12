@@ -19,6 +19,69 @@
 		</div>
 	  </div>
 	</section>
+	<section class="benefits">
+		<div class="benefits__container">
+			<div class="benefits__content">
+				<h2>Co zyskujesz?</h2>
+				<div class="benefits__content-list">
+					<div class="benefits__content-element show-elem show-elem-bottom">
+						<div class="benefits__content-element-img">
+							<img src="/assets/img/gwarancja-satysfakcji.png" alt="Gwarancja satysfakcji">
+						</div>
+						<div class="benefits__content-element-text">
+							<h3>Gwarancja jakości</h3>
+							<p>Do każdej usługi otrzymują Państwo 3-dniową gwarancję, jeżeli efekt będzie inny od ustalonego zwrócimy do 100% ceny usługi.</p>
+						</div>
+					</div>
+					<div class="benefits__content-element show-elem show-elem-bottom">
+						<div class="benefits__content-element-img">
+							<img src="/assets/img/doswiadczenie.png" alt="Doświadczenie">
+						</div>
+						<div class="benefits__content-element-text">
+							<h3>Doświadczenie</h3>
+							<p>5 lat doświadczenia w praniu tapicerki meblowej, oraz wykładzin. 1000 zadowolonych klientów. 4000 upranych mebli i wykładzin.</p>
+						</div>
+					</div>
+					<div class="benefits__content-element show-elem show-elem-bottom">
+						<div class="benefits__content-element-img">
+							<img src="/assets/img/bezpieczne-platnosci.png" alt="Bezpieczne płatności">
+						</div>
+						<div class="benefits__content-element-text">
+							<h3>Bezpieczne płatności</h3>
+							<p>Świadczymy usługi na rzecz osób prywatnych oraz przedsiębiorców - u nas dostaniesz fakturę na swoją firmę.</p>
+						</div>
+					</div>
+					<div class="benefits__content-element show-elem show-elem-bottom">
+						<div class="benefits__content-element-img">
+							<img src="/assets/img/terminowosc.png" alt="Ekspresowy termin">
+						</div>
+						<div class="benefits__content-element-text">
+							<h3>Ekspresowy termin</h3>
+							<p>Gwarantujemy ekspresowy termin wykonania usługi w większości przypadków nawet na jutro!</p>
+						</div>
+					</div>
+					<div class="benefits__content-element show-elem show-elem-bottom">
+						<div class="benefits__content-element-img">
+							<img src="/assets/img/dojazd-gratis.png" alt="Dojazd gratis">
+						</div>
+						<div class="benefits__content-element-text">
+							<h3>Dojazd gratis</h3>
+							<p>Dojazd na terenie Warszawy, oraz bliższych okolic jest zawsze w cenie! Nie pobieramy żadnych dodatkowych ukrytych opłat.</p>
+						</div>
+					</div>
+					<div class="benefits__content-element show-elem show-elem-bottom">
+						<div class="benefits__content-element-img">
+							<img src="/assets/img/profesjonalny-sprzet.png" alt="Profesjonalny sprzęt">
+						</div>
+						<div class="benefits__content-element-text">
+							<h3>Profesjonalny sprzęt</h3>
+							<p>Działamy jedynie na profesjonalnym sprzęcie wiodących marek, oraz najskuteczniejszych detergentach dostępnych na rynku, które są w stanie uporać się z silnymi zabrudzeniami.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="carousel">
 	  <div class="carousel__container">
 		<div class="carousel__content">
@@ -241,6 +304,74 @@ export default {
 	}
   }
 }
+
+.benefits{
+	&__container {
+		max-width: 1440px;
+		margin: 0 auto 100px auto;
+	}
+
+	&__content {
+		margin: 0 4%;
+
+		h2 {
+			margin-bottom: 20px;
+			font-size: 32px;
+		}
+
+		&-list {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		&-element {
+			width: 33%;
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 10px;
+			background-color: #f3f3f3;
+			padding: 20px;
+			min-height: 300px;
+
+			&-text {
+				width: 45%;
+				margin: auto;
+			}
+
+			&-img {
+				width: 45%;
+				margin: auto;
+
+				img {
+					width: 60%;
+					margin: auto;
+					display: block;
+				}
+			}
+		}
+
+		@media(max-width: 1000px) {
+			&-element {
+				width: 49%;
+				min-height: 270px;
+				flex-direction: column;
+
+				&-text {
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+
+		@media(max-width: 600px) {
+			&-element {
+				width: 100%;
+			}
+		}
+	}
+}
+
 .carousel {
   &__container {
 	max-width: 1440px;
