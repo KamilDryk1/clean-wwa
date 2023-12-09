@@ -3,7 +3,7 @@
 	<div class="header__container">
 	  <div class="header__content">
 		<div v-if="video" class="header__content-video">
-		  <video class="vid" autoplay loop muted :src="video"></video>
+		  <video class="vid" autoplay loop muted playsinline :src="video"></video>
 		</div>
 		<div v-else class="header__content-img">
 		  <img class="img" :src="img" alt="pranie" />

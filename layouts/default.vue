@@ -41,9 +41,9 @@ export default {
     },
   },
   mounted() {
-    this.checkWidth();
+    // this.checkWidth();
 
-    window.addEventListener("resize", this.checkWidth);
+    // window.addEventListener("resize", this.checkWidth);
   },
 };
 </script>
