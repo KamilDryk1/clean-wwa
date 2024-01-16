@@ -16,7 +16,7 @@
 		  <p>{{ subtitle }}</p>
 		  <div class="header__content-text-buttons">
 		  	<button v-if="tel" class="header__content-text-button"><a :href="tel">ZADZWOŃ</a></button>
-		  	<button v-if="tel" class="header__content-text-button mail"><a :href="mail">NAPISZ</a></button>
+		  	<button v-if="tel" class="header__content-text-button mail"><a :href="mail">ZAMÓW USŁUGĘ</a></button>
 			</div>
 		</div>
 	  </div>
