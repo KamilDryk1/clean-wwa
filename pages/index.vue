@@ -9,6 +9,10 @@
 				Jesteśmy profesjonalną firmą zajmującą się praniem tapicerki meblowej, samochodowej, oraz wykładzin na terenie Warszawy i okolic. Posiadamy wieloletnie doświadczenie w przywracaniu pierwotnego stanu Państwa mebli. Dzięki naszej usłudze możesz usunąć głęboko osadzone plamy, sierść zwierząt domowych, nieprzyjemne zapachy i roztocza z mebli, oraz innych powierzchni. 
 				Rezultat? Dogłębnie czyste meble i zdrowszy dom.
 			</p>
+			<div class="description__content-text-tel">
+				<img src="/assets/img/tel-icon.png" alt="telefon">
+				<a href="tel:+48733740112">+48 733 740 112</a>
+			</div>
 		  </div>
 		  <div class="description__content-photo">
 			<img
@@ -272,6 +276,22 @@ export default {
 	  p {
 		text-align: justify;
 		font-size: 20px;
+	  }
+
+	  &-tel {
+		display: flex;
+		gap: 5px;
+		margin-top: 5px;
+
+		img {
+			max-width: 50px;
+	  	}
+
+		a {
+			margin: auto 0;
+			font-size: 24px;
+			color: #03989e;
+		}
 	  }
 	}
 

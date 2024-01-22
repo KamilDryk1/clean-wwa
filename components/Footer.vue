@@ -3,14 +3,20 @@
     <div class="footer__container">
       <div class="footer__content">
         <div class="footer__content-logo">
-          <img src="/assets/img/logo.jpg" alt="logo" />
+          <a href="tel:+48733740112">
+			<img src="/assets/img/logo.jpg" alt="logo" />
+		  </a>
         </div>
         <div class="footer__content-contact">
           <h1>Adres i dane kontaktowe</h1>
           <p>ul. Kasprzaka 29c</p>
           <p>01-234 Warszawa</p>
-          <p>cleanwwa@gmail.com</p>
-          <p>+48 733 740 112</p>
+          <a href="mailto:cleanwwa@gmail.com">
+			<p>cleanwwa@gmail.com</p>
+		  </a>
+          <a href="tel:+48733740112">
+			<p>+48 733 740 112</p>
+		  </a>
         </div>
         <div class="footer__content-socials">
           <a href="https://www.facebook.com/CleanWwa"
@@ -57,6 +63,11 @@
       p {
         font-size: 20px;
       }
+
+	  a {
+		text-decoration: none;
+		color: white;
+	  }
     }
 
     &-socials {
