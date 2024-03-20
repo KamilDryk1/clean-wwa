@@ -10,11 +10,14 @@
     />
     <Nuxt />
     <Footer />
+	<Agreement />
   </div>
 </template>
 
 <script>
+import Agreement from '../components/Agreement.vue';
 export default {
+	components: { Agreement },
   data() {
     return {
       video: "/assets/video/HomePage/background-video.mp4",
