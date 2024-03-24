@@ -17,6 +17,9 @@
           <a href="tel:+48733740112">
 			<p>+48 733 740 112</p>
 		  </a>
+		  <a target="_blank" href="https://drive.proton.me/urls/K5J2WAJC84#tkmTmLmTWivf">
+			<p>Polityka prywatności</p>
+		  </a>
         </div>
         <div class="footer__content-socials">
           <a href="https://www.facebook.com/CleanWwa"
