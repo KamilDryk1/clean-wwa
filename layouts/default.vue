@@ -10,7 +10,6 @@
     />
     <Nuxt />
     <Footer />
-	<Agreement />
   </div>
 </template>
 
