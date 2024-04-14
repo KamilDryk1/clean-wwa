@@ -15,8 +15,8 @@
 		  </h2>
 		  <p>{{ subtitle }}</p>
 		  <div class="header__content-text-buttons">
-		  	<button v-if="tel" class="header__content-text-button"><a :href="tel">ZAMÓW USŁUGĘ</a></button>
-		  	<button v-if="tel" class="header__content-text-button mail"><a :href="mail">NAPISZ</a></button>
+		  	<button v-if="tel" class="header__content-text-button"><a :href="tel">ZADZWOŃ</a></button>
+		  	<button @click="openForm" class="header__content-text-button mail">ZAMÓW Z 10% RABATU</button>
 			</div>
 		</div>
 	  </div>
@@ -28,9 +28,15 @@
 <script>
 export default {
   props: ["video", "img", "title", "subtitle", "tel", "mail"],
+  emits: ['openForm'],
   data() {
 	return {};
   },
+  methods: {
+	openForm() {
+		this.$emit('openForm')
+	}
+  }
 };
 </script>
 
@@ -169,6 +175,10 @@ export default {
 		cursor: pointer;
 		transition: 0.4s;
 		border-radius: 30px;
+		font-family: Saira Condensed, sans-serif;
+		font-size: 20px;
+		font-weight: bold;
+		letter-spacing: 1px;
 
 		a {
 			text-decoration: none;

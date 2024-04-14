@@ -7,7 +7,9 @@
       :subtitle="subtitle"
       :tel="tel"
       :mail="mail"
+	  @openForm="openForm"
     />
+	<ContactForm @closeForm="closeForm" v-if="showForm"/>
     <Nuxt />
     <Footer />
   </div>
@@ -15,8 +17,9 @@
 
 <script>
 import Agreement from '../components/Agreement.vue';
+import ContactForm from "../components/ContactForm.vue";
 export default {
-	components: { Agreement },
+	components: { Agreement, ContactForm },
   data() {
     return {
       video: "/assets/video/HomePage/background-video.mp4",
@@ -26,6 +29,7 @@ export default {
       subtitle: "Poznaj naszą ofertę!",
       tel: "tel:+48733740112",
       mail: "mailto:cleanwwa@gmail.com",
+	  showForm: false,
     };
   },
 
@@ -41,6 +45,14 @@ export default {
         this.img = null;
       }
     },
+
+	closeForm() {
+		this.showForm = false;
+	},
+
+	openForm() {
+		this.showForm = true;
+	}
   },
   mounted() {
     // this.checkWidth();

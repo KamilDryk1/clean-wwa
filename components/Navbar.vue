@@ -107,13 +107,14 @@
         </div>
       </div>
     </nav>
-    <TheHeader :video="video" :img="img" :title="title" :subtitle="subtitle" :tel="tel" :mail="mail" />
+    <TheHeader :video="video" :img="img" :title="title" :subtitle="subtitle" :tel="tel" :mail="mail" @openForm="openForm"/>
   </div>
 </template>
 
 <script>
 export default {
   props: ["video", "img", "title", "subtitle", "tel", "mail"],
+  emits: ['openForm'],
   data() {
     return {
       modalStatus: "inactive",
@@ -126,6 +127,9 @@ export default {
     closeModal() {
       this.modalStatus = "inactive";
     },
+	openForm() {
+		this.$emit('openForm')
+	}
   },
 };
 </script>

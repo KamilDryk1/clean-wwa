@@ -5,18 +5,27 @@
 				<form class="contactForm__content-form" @submit.prevent="submitForm">
 					<h2 class="contactForm__content-form-title">Formularz kontaktowy</h2>
 
-    				<input class="contactForm__content-form-input" type="text" placeholder="Imię" name="name" v-model="name"/>
+    				<input class="contactForm__content-form-input" type="text" placeholder="Imię" name="name" v-model="name" required/>
 
-					<input class="contactForm__content-form-input" type="tel" placeholder="Telefon" name="phone" v-model="phone"/>
+					<input class="contactForm__content-form-input" type="tel" placeholder="Telefon" name="phone" v-model="phone" required/>
 
-					<input class="contactForm__content-form-input" type="text" placeholder="Preferowany termin usługi (data i godzina)" name="date" v-model="date"/>
+					<input class="contactForm__content-form-input" type="text" placeholder="Preferowany termin usługi (data i godzina)" name="date" v-model="date" required/>
 
-    				<textarea class="contactForm__content-form-textarea" name="message" placeholder="Informacje o zamawianej usłudze, rodzaj i ilość mebli itd." v-model="message"></textarea>
+    				<textarea class="contactForm__content-form-textarea" name="message" placeholder="Informacje o zamawianej usłudze, rodzaj i ilość mebli itd." v-model="message" required></textarea>
 
-    				<button class="contactForm__content-form-button" type="submit">Wyślij</button>
+					<div class="contactForm__content-form-checkbox">
+						<input 	class="contactForm__content-form-checkbox-input" type="checkbox" name="checkbox" v-model="agreement" required/>
+
+						<label class="contactForm__content-form-checkbox-label" for="checkbox">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+					</div>
+
+					<h4 class="contactForm__content-form-error" v-if="error">Podczas wysyłania wystąpił błąd.</h4>
+
+    				<button type="submit" @click="submitForm" class="contactForm__content-form-button">Wyślij</button>
 				</form>
 
-				<div class="contactForm__content-overlay"></div>
+
+				<div @click="closeForm" class="contactForm__content-overlay"></div>
 			</div>
 		</div>
 	</div>
@@ -26,11 +35,57 @@
 export default {
 	data() {
 		return {
-			access_key: "YOUR_ACCESS_KEY_HERE",
-  			subject: "New Submission from Web3Forms",
+			access_key: "d1bd7e1e-e4a9-4452-a7ab-216176b86f74",
  			name: "",
-  			email: "",
+  			phone: "",
+			date: "",
   			message: "",
+			agreement: false,
+			error: false,
+		}
+	},
+
+	emits: ['closeForm'],
+
+	methods: {
+		async submitForm() {
+			const result = {
+				access_key: this.access_key,
+				name: this.name,
+				phone: this.phone,
+				date: this.date,
+				message: this.message,
+			}
+
+			if (!result.name || !result.phone || !result.date || !result.message || !this.agreement ) {
+				return;
+			}
+
+			try {
+				const body = JSON.stringify(result);
+
+				const response = await fetch('https://api.web3forms.com/submit', {
+					method: 'POST',
+					headers: {'Content-Type': 'application/json'},
+					body: body,
+				});
+
+				if (response.status === 200) {
+					this.name = "";
+					his.phone = "";
+					this.date = "";
+					this.message = "";
+					this.error = false
+					this.closeForm();
+				}
+			} catch (error) {
+				console.log(error);
+				this.error = true;
+			}
+		},
+
+		closeForm() {
+			this.$emit('closeForm');
 		}
 	}
 }
@@ -77,7 +132,9 @@ export default {
 			justify-content: space-around;
 			gap: 10px;
 			min-height: 60%;
+			max-height: 800px;
 			width: 60%;
+			max-width: 600px;
 			z-index: 1000;
 			background-color: #fff;
 			border-radius: 10px;
@@ -126,6 +183,17 @@ export default {
 			&-button:hover {
 				background-color: #09ebf3;
 	  		}
+
+			&-checkbox {
+				display: flex;
+				justify-content: flex-start;
+				gap: 10px;
+				width: 80%;
+			}
+
+			&-error {
+				color: red;
+			}
 		}
 	}
 }
