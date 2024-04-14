@@ -203,14 +203,18 @@
 	  </div>
 	</section> -->
 	<Opinions />
+	<ContactForm />
   </div>
 </template>
 
 <script>
 import showElement from "~/mixins/showElement";
+import ContactForm from "../components/ContactForm.vue";
 
 export default {
   name: "IndexPage",
+
+  components: [ContactForm],
 
   mixins: [showElement],
 
