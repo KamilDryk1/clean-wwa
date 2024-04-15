@@ -195,6 +195,12 @@ export default {
 				color: red;
 			}
 		}
+
+		@media(max-width: 600px) {
+			&-form {
+				width: 90%;
+			}
+		}
 	}
 }
 </style>
