@@ -21,7 +21,7 @@
 
 					<h4 class="contactForm__content-form-error" v-if="error">Podczas wysyłania wystąpił błąd.</h4>
 
-    				<button type="submit" @click="submitForm" class="contactForm__content-form-button">Wyślij</button>
+    				<button type="submit" class="contactForm__content-form-button">Wyślij</button>
 				</form>
 
 
@@ -72,7 +72,7 @@ export default {
 
 				if (response.status === 200) {
 					this.name = "";
-					his.phone = "";
+					this.phone = "";
 					this.date = "";
 					this.message = "";
 					this.error = false
