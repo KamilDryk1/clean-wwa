@@ -20,6 +20,7 @@
 		  <a target="_blank" href="https://drive.proton.me/urls/K5J2WAJC84#tkmTmLmTWivf">
 			<p>Polityka prywatności</p>
 		  </a>
+		  <nuxt-link to="/kontakt" class="menu-link"><p>Regulamin</p></nuxt-link>
         </div>
         <div class="footer__content-socials">
           <a href="https://www.facebook.com/CleanWwa"

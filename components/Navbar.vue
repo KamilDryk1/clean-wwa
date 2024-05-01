@@ -52,6 +52,14 @@
                     >Blog</nuxt-link
                   >
                 </li>
+				<li class="navbar__content-overlay-item">
+                <nuxt-link
+                  to="/kontakt"
+                  class="menu-link"
+                  @click.native="closeModal"
+                  >Kontakt</nuxt-link
+                >
+              </li>
               </div>
               <li class="navbar__content-menu-item">
                 <nuxt-link
@@ -86,11 +94,11 @@
                 >
               </li>
               <li class="navbar__content-menu-item">
-                <span
-                  v-scroll-to="'#footer'"
+                <nuxt-link
+                  to="/kontakt"
                   class="menu-link"
                   @click.native="closeModal"
-                  >Kontakt</span
+                  >Kontakt</nuxt-link
                 >
               </li>
               <div

@@ -81,7 +81,7 @@ export default {
   }
 
   &__content {
-	margin: 0 4%;
+	// margin: 0 4%;
 	display: flex;
 	justify-content: space-around;
 

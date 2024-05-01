@@ -203,16 +203,26 @@
 	  </div>
 	</section> -->
 	<Opinions />
+	<section class="contact">
+		<div class="contact__container">
+			<div class="contact__content">
+				<ContactForm />
+			</div>
+		</div>
+	</section>
   </div>
 </template>
 
 <script>
 import showElement from "~/mixins/showElement";
+import ContactForm from "~/components/ContactForm";
 
 export default {
   name: "IndexPage",
 
   mixins: [showElement],
+
+  components: [ContactForm],
 
   data() {
 	return {
@@ -513,5 +523,13 @@ export default {
 	  background-color: #00b1b8;
 	}
   }
+}
+.contact {
+	// background-color: #212121;
+
+	&__container {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
 }
 </style>

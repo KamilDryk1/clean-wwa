@@ -24,8 +24,7 @@
     				<button type="submit" class="contactForm__content-form-button">Wyślij</button>
 				</form>
 
-
-				<div @click="closeForm" class="contactForm__content-overlay"></div>
+				<div v-if="showOverlay" @click="closeForm" class="contactForm__content-overlay"></div>
 			</div>
 		</div>
 	</div>
@@ -44,6 +43,8 @@ export default {
 			error: false,
 		}
 	},
+
+	props: ['showOverlay'],
 
 	emits: ['closeForm'],
 
@@ -93,13 +94,7 @@ export default {
 
 <style lang="scss" scoped>
 .contactForm {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 998;
-	height: 100vh;
-	width: 100vw;
+	height: 600px;
 
 	&__container {
 		width: 100%;
@@ -118,7 +113,7 @@ export default {
 			top: 0;
 			left: 0;
 			background-color: rgba(30, 30, 30, 0.5);
-			z-index: 999;
+			z-index: 800;
 		}
 
 		&-form {
@@ -135,7 +130,7 @@ export default {
 			max-height: 800px;
 			width: 60%;
 			max-width: 600px;
-			z-index: 1000;
+			z-index: 801;
 			background-color: #fff;
 			border-radius: 10px;
 			padding: 10px 0;
@@ -160,7 +155,7 @@ export default {
 				border-radius: 10px;
 				padding: 10px;
 				font-size: 16px;
-				resize: vertical;
+				resize: none;
 				font-family: Saira Condensed, sans-serif;
 			}
 

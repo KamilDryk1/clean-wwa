@@ -9,7 +9,7 @@
       :mail="mail"
 	  @openForm="openForm"
     />
-	<ContactForm @closeForm="closeForm" v-if="showForm"/>
+	<ContactForm :showOverlay="true" class="contactForm" @closeForm="closeForm" v-if="showForm"/>
     <Nuxt />
     <Footer />
   </div>
@@ -61,3 +61,15 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.contactForm {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 998;
+	height: 100vh;
+	width: 100vw;
+}
+</style>

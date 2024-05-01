@@ -16,7 +16,7 @@
 		  <p>{{ subtitle }}</p>
 		  <div class="header__content-text-buttons">
 		  	<button v-if="tel" class="header__content-text-button"><a :href="tel">ZADZWOŃ</a></button>
-		  	<button @click="openForm" class="header__content-text-button mail">ZAMÓW </button>
+		  	<button v-if="mail" @click="openForm" class="header__content-text-button mail">ZAMÓW </button>
 			</div>
 		</div>
 	  </div>
@@ -57,9 +57,9 @@ export default {
 	height: 700px;
 	background: linear-gradient(
 	  to right,
-	  black 0% 15%,
+	  black 0% 10%,
 	  rgba(0, 0, 0, 0.3),
-	  black 85% 100%
+	  black 90% 100%
 	);
 	z-index: 3;
 	animation: fadeIn 1.3s ease-in-out forwards;
