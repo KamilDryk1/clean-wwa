@@ -3,7 +3,7 @@
 		<div class="contact__container">
 			<div class="contact__content">
 				<div class="contact__content-details">
-					<h3>CLEAN WWA Grzegorz Gancarek</h3>
+					<h3>CLEAN WWA</h3>
 
 					<h5><a href="tel:+48733740112">tel. +48 733 740 112</a></h5>
 
@@ -19,8 +19,8 @@
 				<ContactForm />
 
 				<div class="contact__content-terms">
-					<h1>Regulamin świadczonych usług firmy CLEAN WWA Grzegorz Gancarek</h1>
-  					<p>Usługi firmy CLEAN WWA Grzegorz Gancarek świadczone zgodnie z regulaminem. Regulamin określa zasady świadczonych usług przez firmę tj. pranie tapicerki meblowej,
+					<h1>Regulamin świadczonych usług firmy CLEAN WWA</h1>
+  					<p>Usługi firmy CLEAN WWA świadczone zgodnie z regulaminem. Regulamin określa zasady świadczonych usług przez firmę tj. pranie tapicerki meblowej,
   					samochodowej, wykładzin oraz innych usług zawartych w oferowanych usługach.</p>
   					<ol>
   						<li>Firma przyjmuje zlecenia prania tapicerki meblowej, samochodowej oraz innych

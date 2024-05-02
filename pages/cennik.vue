@@ -10,21 +10,30 @@
 		  </li>
 		  <li class="price__content-element">
 			<div class="key"><p>Sofa 2 osobowa</p></div>
-			<div class="value"><p>od 130 zł</p></div>
+			<div class="value">
+				<p>cena regularna 145 zł</p>
+				<p class="discount">cena przez fromularz 130 zł</p>
+			</div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key"><p>Sofa 3 osobowa</p></div>
-			<div class="value"><p>od 140 zł</p></div>
+			<div class="value">
+				<p>cena regularna 170 zł</p>
+				<p class="discount">cena przez formularz 150 zł</p>
+			</div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key"><p>Narożnik 3 osobowy</p></div>
-			<div class="value"><p>od 170 zł</p></div>
+			<div class="value">
+				<p>cena regularna 220 zł</p>
+				<p class="discount">cena przez formularz 200 zł</p>
+			</div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
 			  <p>Narożnik większy niż 3 os (powyżej 2.5m)</p>
 			</div>
-			<div class="value"><p>od 200 zł</p></div>
+			<div class="value"><p>wycena indywidualna</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
@@ -36,7 +45,7 @@
 			<div class="key">
 			  <p>Fotel</p>
 			</div>
-			<div class="value"><p>50-80 zł</p></div>
+			<div class="value"><p>od 90 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
@@ -46,27 +55,42 @@
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
+			  <p>Krzesło samo oparcie</p>
+			</div>
+			<div class="value">
+				<p>cena regularna 25 zł</p>
+				<p class="discount">cena przez formularz 20 zł</p>
+			</div>
+		  </li>
+		  <li class="price__content-element">
+			<div class="key">
 			  <p>Krzesło biurowe</p>
 			</div>
-			<div class="value"><p>od 25 zł</p></div>
+			<div class="value"><p>od 40 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
 			  <p>Pufa</p>
 			</div>
-			<div class="value"><p>od 30 zł</p></div>
+			<div class="value"><p>od 40 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
-			  <p>Rama łóżka</p>
+			  <p>Rama łóżka z wezgłowiem</p>
 			</div>
-			<div class="value"><p>od 110 zł</p></div>
+			<div class="value">
+				<p>cena regularna 140 zł</p>
+				<p class="discount">cena przez formularz 120 zł</p>
+			</div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
 			  <p>Poduszki</p>
 			</div>
-			<div class="value"><p>5-15 zł</p></div>
+			<div class="value">
+				<p>cena regularna 17 zł</p>
+				<p class="discount">cena przez formularz 15 zł</p>
+			</div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
@@ -326,5 +350,8 @@ export default {
 	  padding-bottom: 40px;
 	}
   }
+}
+.discount {
+	color: red;
 }
 </style>
