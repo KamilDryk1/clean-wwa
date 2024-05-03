@@ -2,6 +2,337 @@
   <section class="blog">
     <div class="blog__container">
       <div class="blog__content">
+		<div class="blog__content-chemistry">
+			<img
+            	src="/assets/img/Blog/image3.jpg"
+        		alt="Usuwanie krwi"
+           		class="blog__content-removal-img"
+        	/>
+			<div class="blog__content-chemistry-text">
+				<h1>Usuwanie plam to kwestia chemii</h1>
+				<p>
+					Kiedy Twój ulubiony mebel lub drogi dywan ulegnie nagłemu zabrudzeniu, często pierwszą reakcją jest próba samodzielnego usunięcia plamy. Ponieważ supermarkety oferują tak szeroką gamę produktów o nazwach obiecujących usunięcie wszelkiego rodzaju plam, nie jest zaskoczeniem, że konsumenci sięgają po butelkę z półki. Wiele osób nie wie jednak, że zgodnie z niedawnym raportem, w 90% przypadków, w których klient próbuje samodzielnie usunąć plamę, kończy się to roszczeniem ubezpieczeniowym. Prawda jest taka, że usuwanie plam jest w rzeczywistości kwestią chemii i w rezultacie nie ma jednego produktu, który poradziłby sobie ze wszystkimi plamami na każdym włóknie dywanu!
+				</p>
+				<div class="blog__content-chemistry-more" :class="chemistryOn" v-if="chemistryOn">
+					<h3>Usuwanie plam to nauka, która wymaga specjalistycznej wiedzy i dbałości o szczegóły</h3>
+					<p>
+						Zanim spróbujesz samodzielnie usunąć plamę, musisz znać rodzaj włókna i jego
+						właściwości.Pomimo obietnic dotyczących produktów do czyszczenia, nie ma jednego
+						rozwiązania, które poradziłoby sobie ze wszystkimi plamami na każdym dywanie meblu.
+						Niekiedy może zdarzyć się tak, że bardziej wyszukany materiału typu wiskoza, jedwab,
+						carabu mogą ulec zniszczeniu poprzez zastosowanie niewłaściwej chemii.
+					</p>
+					<h3>Co powinienem zrobić, gdy nagle muszę poradzić sobie z plamą?</h3>
+					<p>
+						Jeśli w Twoim domu właśnie pojawiła się plama, nie panikuj! Lepiej zostawić plamę na noc,
+						niż próbować usunąć ją w domu za pomocą YouTube. Ważne jest jednak, aby usunąć
+						plamę tak szybko, jak to możliwe, aby ułatwić proces usuwania. W CLEANWWA zawsze
+						chętnie udzielamy klientom bezpłatnych porad dotyczących kolejnych kroków lub sami
+						dokładnie oceniamy przedmiot. Możesz również skontaktować się z producentem
+						przedmiotu, aby uzyskać szczegółowe porady. Jeśli próbowałeś już wyczyścić plamę, a jej
+						stan się nie poprawił lub pogorszył, jeszcze ważniejsze jest skontaktowanie się z
+						doświadczonym specjalistą. W międzyczasie zalecamy usunięcie wszelkich ciał stałych i
+						wytarcie świeżych plam czystymi, białymi ręcznikami lub serwetkami.
+					</p>
+					<h3>Ważne informacje na temat tych powszechnych plam</h3>
+					<h3>Plama z kawy</h3>
+					<p>
+						Mogłoby się wydawać, że wszystkie plamy z kawy są takie same, ale głównym czynnikiem
+						jest temperatura. Gorąca kawa wniknie głębiej we włókno i zastygnie, podczas gdy plama z
+						zimnej kawy może łatwiej zejść. Kolor kawy również ma znaczenie: biała kawa zawiera
+						mleko, w związku z czym białko zawarte w mleku musi zostać usunięte w pierwszej
+						kolejności przed garbnikami zawartymi w samej kawie.
+					</p>
+					<h3>Czerwone wino</h3>
+					<p>
+						Wiele osób uważa, że białe wino zneutralizuje plamę z czerwonego wina, ale jest to
+						nieprawda. Usuwanie plam z czerwonego wina jest trudne i w idealnym przypadku wymaga
+						profesjonalisty. Najlepiej jest nie robić nic z plamą samodzielnie, ponieważ im bardziej jest
+						ona naruszona, tym głębsza staje się plama.
+					</p>
+					<h3>Lakier do paznokci</h3>
+					<p>
+						Jest to szczególnie trudna plama i pomimo pokusy, nigdy nie należy używać zmywacza do paznokci, ponieważ rozpuści on klej, który utrzymuje włókna przymocowane do podłoża dywanu.
+					</p>
+					<h3>Krew</h3>
+					<p>
+						Ponieważ jest to płyn ustrojowy, konieczne jest noszenie rękawiczek. Wirusy mogą przetrwać w zaschniętej krwi do 7 dni. Należy używać tylko zimnej wody bez szorowania, ale domowe usuwanie może pozostawić ślad wody.
+					</p>
+					<h3>Plama z moczu</h3>
+					<p>
+						Usuwanie plam z moczu to kolejny bardzo trudny przypadek, ale pierwszym krokiem jest
+						zawsze spłukanie plamy, ponieważ obszar musi być całkowicie odkażony. Profesjonalista
+						powinien zazwyczaj być w stanie zapewnić zadowalające usunięcie plam już po tym
+						pierwszym procesie, o ile zostanie on wykonany szybko.
+					</p>
+					<p>
+						Oddzielna usługa jest konieczna, jeśli odbarwienie utrzymuje się po wyschnięciu obszaru w
+						celu usunięcia pozostałości koloru. Mocz jest silnie kwaśny, ale staje się silnie zasadowy, gdy
+						wchodzi w kontakt z włóknami, a te skrajne wartości pH mogą wpływać na oryginalny kolor,
+						szczególnie w przypadku dywanów wełnianych. W CLEANWWA używamy
+						zaawansowanego procesu usuwania plam, aby przetestować obszar mebla, aby zobaczyć, jak
+						zareaguje na działanie, zanim w pełni usuniemy plamę z moczu. Jeśli zabieg zostanie
+						wykonany szybko, nie powinna nastąpić utrata koloru.
+					</p>
+					<h3>Czy możemy zagwarantować, aby każda plama zniknęła?</h3>
+					<p>
+						Jesteśmy w pełni certyfikowanym specjalistą w zakresie pielęgnacji włókien i mamy ponad
+						dziesięcioletnie doświadczenie w skutecznym usuwaniu szerokiej gamy plam, które
+						pozostały nietknięte. Możemy również ocenić i kontynuować leczenie, gdy próbowano
+						usunąć plamę w domu za pomocą produktów domowych, ale nie możemy zagwarantować, że
+						każda plama zostanie usunięta w tym przypadku.
+					</p>
+				</div>
+				<button class="blog__content-chemistry-btn" @click="showChemistry" v-if="!chemistryOn">
+			  		Czytaj więcej
+				</button>
+			</div>
+		</div>
+		<div class="blog__content-blood">
+			<img
+            	src="/assets/img/Blog/image2.jpg"
+        		alt="Usuwanie krwi"
+           		class="blog__content-removal-img"
+        	/>
+			<div class="blog__content-blood-text">
+				<h1>Jak czyścić plamy krwi z tapicerki?</h1>
+				<p>
+					Nasze meble tapicerowane są jednym z największych powodów do dumy i radości w
+					naszym życiu. Na tej trudnej ścieżce naszej egzystencji niewiele jest osiągnięć, które są
+					naprawdę trwałe. Choć może to zabrzmieć głupio, dekorowanie i tworzenie domu jest jedną
+					z najbardziej pielęgnujących duszę rzeczy, jakie możemy zrobić. Jednak meble pokryte
+					tkaniną mają wielu wrogów, którzy próbują zrujnować ich piękny wygląd. Jednym z tych
+					plamiących wrogów jest krew. Krew może być trudna do usunięcia z mebli tapicerowanych,
+					zwłaszcza jeśli wyschła. Dlatego przygotowaliśmy ten przewodnik, aby wyjaśnić, jak czyścić
+					plamy krwi z tapicerki.
+				</p>
+				<div class="blog__content-blood-more" :class="bloodOn" v-if="bloodOn">
+					<h3>Różne materiały tapicerskie</h3>
+					<p>
+						Zanim powiemy, jak czyścić plamy krwi z tapicerki, warto zapoznać się z różnymi rodzajami
+						tkanin, którymi tapicerowane są meble. Każdy rodzaj ma swoje mocne i słabe strony,
+						dlatego warto zapoznać się z nimi przed przystąpieniem do samodzielnego czyszczenia.
+						Jest ich wiele, więc wymienimy najpopularniejsze tkaniny w Polsce.
+					</p>
+					<p>● Wełna - niezbyt odporna na plamy, skomplikowany proces czyszczenia;</p>
+					<p>● Bawełna - niezbyt odporna na blaknięcie, skomplikowany proces czyszczenia;</p>
+					<p>● Nylon - trwały, łatwy w czyszczeniu, wysoka odporność na ścieranie;</p>
+					<p>● Poliester - trwały, łatwy w czyszczeniu;</p>
+					<p>● Akryl - długotrwały, łatwy w czyszczeniu;</p>
+					<p>● Olefina - trwała, łatwa w czyszczeniu;</p>
+					<p>● Rayon - niezbyt trwały, czyszczenie w niskiej wilgotności.</p>
+					<p>
+						Znajomość kluczowych cech tych tkanin pozwoli ci wiedzieć, czy należy odstąpić od
+						niektórych instrukcji czyszczenia i wprowadzić własne poprawki do procesu czyszczenia.
+						Zalecamy również sprawdzenie etykiet z instrukcjami czyszczenia tapicerki, aby nie
+						uszkodzić tapicerki. Teraz, bez dalszych ceregieli, oto nasze instrukcje dotyczące
+						czyszczenia plam krwi z tapicerki.
+					</p>
+					<h3>Jak czyścić plamy krwi z tapicerki?</h3>
+					<p>
+						Czyszczenie plam krwi, niezależnie od tego, czy czyścisz tapicerkę, czy nie, może wiązać
+						się z ryzykiem higienicznym. Przed rozpoczęciem procesu czyszczenia chcielibyśmy zwrócić
+						uwagę na 2 bardzo ważne rzeczy:
+					</p>
+					<p>
+						1. Podczas czyszczenia krwi należy zawsze nosić rękawice PPE. Wirusy takie jak HIV,
+						wirusowe zapalenie wątroby typu B i C, kiła, bruceloza i wiele innych są przenoszone
+						przez krew. Wirusy te mogą przetrwać do 7 dni w plamach krwi, dlatego należy
+						zachować ostrożność.
+					</p>
+					<p>
+						2. Nigdy nie czyść krwi gorącą wodą. Krew jest plamą białkową i gorąca woda sprawi,
+						że zastygnie ona w tkaninie, uniemożliwiając jej usunięcie.
+					</p>
+					<p>
+						Jak czyścić plamy krwi z tapicerki:
+					</p>
+					<p>
+						1. Użyj szczoteczki do zębów, aby usunąć krew z tkaniny, jeśli plama krwi zaschła.
+					</p>
+					<p>
+						2. Jeśli pokrowce mebli tapicerowanych można zdjąć, zrób to.
+					</p>
+					<p>
+						3. Wypłucz pokrowce wiele razy, wypłukując jak najwięcej krwi.
+					</p>
+					<p>
+						4. Jeśli nie, weź chłonną szmatkę lub gąbkę i zwilż ją.
+					</p>
+					<p>
+						5. Przetrzyj obszar i usuń jak najwięcej plamy. Wypłucz gąbkę lub ściereczkę, aby uniknąć rozprzestrzeniania się plamy.
+					</p>
+					<p>
+						6. Weź filiżankę zimnej wody i wymieszaj ją z odrobiną wody sodowej.
+					</p>
+					<p>
+						7. Wylej tę mieszaninę na obszar i użyj czystej gąbki, aby zetrzeć plamę.
+					</p>
+					<p>
+						8. Powtórz krok 7 kilka razy. Gdy zauważysz, że woda wypłukiwana z gąbki nie ma już krwistego zabarwienia, możesz zakończyć krok 7.
+					</p>
+					<p>
+						9. Wymieszaj 8 części wody z 1 częścią gliceryny i 1 częścią detergentu do prania (wybierz najlepszy detergent, który pasuje do rodzaju tapicerki) i dodaj kroplę płynu do mycia naczyń fairy.
+					</p>
+					<p>
+						10. Wymieszaj w butelce z rozpylaczem.
+					</p>
+					<p>
+						11. Spryskaj plamę 2 lub 3 razy i wyszoruj ją gąbką.
+					</p>
+					<p>
+						12. Jeśli uważasz, że może to być konieczne, powtórz krok 11 kilka razy.
+					</p>
+					<p>
+						13. Gdy plama przestanie być widoczna, weź miskę z czystą, chłodną wodą i wypłucz tkaninę, aż nie będzie już mydlin.
+					</p>
+				</div>
+				<button class="blog__content-blood-btn" @click="showBlood" v-if="!bloodOn">
+			  		Czytaj więcej
+				</button>
+			</div>
+		</div>
+		<div class="blog__content-bestCarpet">
+			<img
+            	src="/assets/img/Blog/image5.jpg"
+        		alt="Najlepszy dywan do salonu"
+           		class="blog__content-removal-img"
+        	/>
+			<div class="blog__content-bestCarpet-text">
+				<h1>Jak wybrać dywan do salonu (najlepszy materiał)</h1>
+				<p>
+					Przyjrzymy się, jak wybrać dywan do salonu według materiału. Wybór tkaniny może zależeć
+					od tego, czego szukasz. Pamiętaj, że jeśli masz zwierzęta lub dzieci, będziesz potrzebować
+					czegoś bardziej trwałego i odpornego na plamy.
+				</p>
+				<div class="blog__content-bestCarpet-more" :class="bestCarpetOn" v-if="bestCarpetOn">
+					<h3>1. Wiskoza Tencel:</h3>
+					<p>
+						Jeśli chcesz zaprojektować wnętrze swojego domu w luksusowym stylu, możesz
+						zdecydować się na wiskozę Tencel, znaną również jako jedwab artystyczny. Wiskoza to
+						wszechstronne włókno, które zapewnia taki sam komfort jak włókna naturalne. Jest uważane
+						za półsyntetyczne, ponieważ wykorzystuje również naturalną celulozę. Jedwab artystyczny
+						jest oddychający, chłodny w dotyku i bardzo łatwo przyjmuje kolory.
+					</p>
+					<h3>2. polipropylen:</h3>
+					<p>
+						Posiadanie dzieci i zwierząt domowych nie pozwala na stosowanie luksusowych materiałów
+						w salonie. Najlepszą opcją w tym przypadku jest ładny dywan polipropylenowy. Są one tanie
+						w zakupie i mają długą żywotność (10-15 lat, jeśli są dobrze pielęgnowane). Z punktu
+						widzenia czyszczenia dywanów jest to najlepszy wybór, ponieważ jest naturalny, trwały i
+						łatwy do czyszczenia i konserwacji.
+					</p>
+					<h3>3. wełna</h3>
+					<p>
+						Dywany wełniane to kolejny optymalny wybór do salonu. Ze względu na zawartość lanoliny
+						w wełnie, ten rodzaj tkaniny jest naturalnie odporny na plamy i znacznie łatwiejszy do
+						czyszczenia niż dywany syntetyczne. Dobry wełniany dywan z krótkim włosiem nie będzie
+						miał żadnych problemów z rozlanymi płynami. Jeśli zdążysz na czas, łatwo je zetrzeć.
+						Ponadto regularne odkurzanie pomaga utrzymać je w doskonałym stanie. Jeśli odpowiednio
+						dbasz o swój wełniany dywan, możesz spodziewać się jego żywotności na poziomie 15-20
+						lat. Należy jednak pamiętać, że niektóre dywany wełniane o intensywnych kolorach mogą ścierać swój kolor. Jeśli dywan będzie położony na wykładzinie dopasowanej do ściany, takie przeniesienie koloru jest niemożliwe do usunięcia.
+					</p>
+					<p>
+						Oczywiście są to tylko nasze wytyczne dotyczące najlepszego wyboru. Nasze wybory zostały
+						dokonane z punktu widzenia profesjonalnego sprzątacza. Oznacza to, że są to najlepsze opcje
+						w zakresie konserwacji i czyszczenia. Kolejna szybka wskazówka: zalecamy również zakup
+						dywanu z krótkim włosiem. Jest on bardziej odporne na plamy i łatwiejsze w czyszczeniu
+						niż dywany z długim włosiem.
+					</p>
+				</div>
+				<button class="blog__content-bestCarpet-btn" @click="showBestCarpet" v-if="!bestCarpetOn">
+			  		Czytaj więcej
+				</button>
+			</div>
+		</div>
+		<div class="blog__content-oldLook">
+			<img
+            	src="/assets/img/Blog/blog3.jpg"
+        		alt="Przywracanie dawnego wyglądu"
+           		class="blog__content-removal-img"
+        	/>
+			<div class="blog__content-oldLook-text">
+				<h1>4 sposoby na przywrócenie sofie dawnego wyglądu</h1>
+				<p>
+					Czy Twoja sofa wygląda na nieco zabrudzoną? Jeśli tak, to może być kuszące, aby
+					kupić nową. Jednak zakup nowej sofy to znacząca inwestycja, która wymaga wielu
+					poszukiwań i cierpliwości. Nawet jeśli wybierzesz ją szybko, być może będziesz musiał
+					czekać tygodniami na jej dostawę, aby przekonać się, że nie pasuje do Twojego mieszkania
+					tak, jak sobie wyobrażałeś. Dlaczego więc nie spróbować odnowić sofę, którą już masz? W
+					końcu podobała ci się, gdy ją kupiłeś i do tej pory dobrze ci służyła, prawda? Jeśli rama nie
+					jest zepsuta, możesz poprawić wygląd i stan swoich mebli za pomocą kilku prostych
+					sztuczek. Nasi specjaliści od pielęgnacji tkanin dzielą się sposobami na odświeżenie starej
+					sofy i cieszenie się nią przez wiele kolejnych lat.
+				</p>
+				<div class="blog__content-oldLook-more" :class="oldLookOn" v-if="oldLookOn">
+					<h3>Zadzwoń do firmy czyszczącej sofy</h3>
+					<p>
+						Kiedy sofa zaczyna wyglądać na zużytą, pierwszym i najważniejszym krokiem jest
+						zorganizowanie głębokiego czyszczenia tapicerki. Profesjonalny zabieg to najlepszy sposób
+						na przywrócenie pięknego wyglądu miękkim meblom. Jest to niedrogie i szybkie rozwiązanie
+						na odświeżenie matowego wyglądu sofy, nawet w przypadku starych, nieestetycznych plam.
+						Eksperci używają potężnego sprzętu i zaawansowanych produktów do radzenia sobie z
+						różnymi rodzajami zabrudzeń; na przykład my w CLEANWWA używamy ponad 10 różnych
+						rozwiązań, które pomagają nam pozbyć się wszelkiego rodzaju plam, w tym tłuszczu, krwi,
+						moczu, kawy, czerwonego wina, sosu sojowego i wielu innych.
+					</p>
+					<p>
+						Głębokie czyszczenie co najmniej raz w roku pomaga nie tylko odświeżyć wygląd, ale także
+						przedłuża żywotność sofy. Profesjonalne zabiegi, takie jak ekstrakcja gorącą wodą, usuną
+						brud i kurz osadzony głęboko w tkaninach i zapobiegną ich zużyciu. I nie zapomnij poprosić
+						o ochronę przed plamami wraz z usługą głębokiego czyszczenia sofy, aby chronić świeżo
+						wyczyszczone meble. W ostatecznym rozrachunku czyszczenie sofy kosztuje mniej niż
+						zakup nowych mebli.
+					</p>
+					<h3>Usunięcie zmechaceń</h3>
+					<p>
+						Z biegiem czasu możesz zauważyć, że na powierzchni Twojej sofy gromadzi się
+						zmechacenia - podobne do tego, który tworzy się na ubraniach. Problem ten jest najbardziej
+						powszechny w przypadku luźniejszych, krótszych włókien, a niektóre tkaniny mają tendencję
+						do mechacenia się bardziej niż inne. Tapicerka wykonana tylko z jednego rodzaju nici -
+						naturalnej lub syntetycznej - ma tendencję do łatwiejszego powstawania zmechaceń niż sofy
+						pokryte materiałami mieszanymi, z wyjątkiem aksamitu, jedwabiu i lnu.
+					</p>
+					<p>
+						Te uciążliwe zmechacenia powstają w wyniku codziennego zużycia, gdy zerwane włókna na
+						powierzchni tapicerki stają się splątane. Z czasem nitki te zlepiają się ze sobą, tworząc
+						charakterystyczne kuleczki przyklejone do mebli. I chociaż te małe kulki są dość
+						nieestetyczne i mogą sprawić, że sofa będzie wyglądać na zużytą, można sobie z nimi łatwo
+						poradzić. Wszystko, czego potrzebujesz, to zasilana bateryjnie golarka do tkanin - taka sama,
+						jakiej możesz używać do swetrów i innych ubrań. Przeciągnij gadżet po problematycznych
+						obszarach, a usunie on nadmiar zmechaceń, natychmiast poprawiając wygląd sofy.
+					</p>
+					<h3>Ponowne tapicerowanie</h3>
+					<p>
+						Prawdę mówiąc, pokrycie sofy nową tapicerką nie jest najprostszym rozwiązaniem.
+						Zalecamy je tylko w przypadku wyblakłych kolorów i rozdarć na tkaninie. Zmiana tapicerki to
+						złożony proces, który nie trwa jeden dzień. Jest to również dość niewygodne - musisz
+						rozstać się ze swoją sofą na kilka tygodni, ponieważ profesjonaliści nie mogą pracować nad
+						nią w Twoim domu. Zazwyczaj trzeba zorganizować transport mebla do ich pracowni, gdzie
+						dysponują narzędziami i materiałami potrzebnymi do jego odnowienia. Mimo to,
+						tapicerowanie nadaje się do odnawiania wyblakłych lub podartych luksusowych lub
+						zabytkowych mebli. Jeśli rama sofy jest nienaruszona, a ty nadal ją uwielbiasz,
+						tapicerowanie jest sposobem na uratowanie jej i nadal może być tańsze niż zakup nowego.
+					</p>
+					<h3>Wypróbuj pokrowce, koce</h3>
+					<p>
+						Jeśli twoja sofa ma zdejmowane poduszki, możesz znaleźć profesjonalistę, który uszyje ci
+						całkowicie nowe pokrowce tapicerskie, które idealnie pasują do każdej części sofy. Nie
+						działa to jednak w przypadku mebli, które mają stałe poduszki. Pokrowce na kanapy są
+						bardziej bezproblemowym i przyjaznym dla budżetu rozwiązaniem niż pranie tapicerki.
+						Obecnie można kupić całe pokrowce, które w pełni otulają sofę. Są one elastyczne i dobrze
+						dopasowują się do krzywizn kanapy. Kolejną zaletą jest to, że można wybierać spośród
+						wielu wzorów, co pomaga zmienić wygląd mebli. Jednakże, chociaż gotowe elastyczne
+						pokrowce są piękne, są one jedynie rozwiązaniem kosmetycznym. Nie sprawią, że brud i
+						utrzymujące się zapachy znikną. Dlatego nadal warto zarezerwować profesjonalne
+						czyszczenie tapicerki i upewnić się, że sofa jest higieniczna pod nowym pokrowcem.
+					</p>
+				</div>
+				<button class="blog__content-oldLook-btn" @click="showOldLook" v-if="!oldLookOn">
+			  		Czytaj więcej
+				</button>
+			</div>
+		</div>
 		<div class="blog__content-removal">
           <img
             src="/assets/img/Blog/odplamianie.jpg"
@@ -315,6 +646,10 @@ export default {
 	  removalOn: false,
 	  mattressOn: false,
 	  couchOn: false,
+	  oldLookOn: false,
+	  bestCarpetOn: false,
+	  bloodOn: false,
+	  chemistryOn: false,
     };
   },
   methods: {
@@ -335,6 +670,18 @@ export default {
 	},
 	showCouch() {
 		this.couchOn = true;
+	},
+	showOldLook() {
+		this.oldLookOn = true;
+	},
+	showBestCarpet() {
+		this.bestCarpetOn = true;
+	},
+	showBlood() {
+		this.bloodOn = true;
+	},
+	showChemistry() {
+		this.chemistryOn = true;
 	}
   },
 };
@@ -352,7 +699,7 @@ export default {
   }
 
   &__content {
-    margin: 0 4%;
+    margin: 100px 4% 0;
     padding: 0 4%;
     position: relative;
     background-color: #fff;
@@ -477,6 +824,26 @@ export default {
         }
       }
     }
+
+	&-oldLook {
+		padding-top: 100px;
+		min-height: 500px;
+	}
+
+	&-bestCarpet {
+		padding-top: 100px;
+		min-height: 500px;
+	}
+
+	&-blood {
+		padding-top: 100px;
+		min-height: 500px;
+	}
+
+	&-chemistry {
+		padding-top: 100px;
+		min-height: 500px;
+	}
   }
 }
 </style>
