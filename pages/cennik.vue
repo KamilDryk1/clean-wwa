@@ -2,101 +2,111 @@
   <section class="price">
 	<div class="price__container">
 	  <div class="price__content">
+		<nuxt-link to="/kontakt">
+			<button class="price__content-button">Zamów przez formularz z rabatem</button>
+		</nuxt-link>
 		<h1 class="price__content-title">Pranie tapicerki meblowej</h1>
 		<ul class="price__content-list">
+    <li class="price__content-element">
+        <div class="key"><p>Sofa 2 osobowa</p></div>
+        <div class="value">
+            <p>cena regularna 145 zł</p>
+            <p class="discount">cena przez formularz 130 zł</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Sofa 3 osobowa</p></div>
+        <div class="value">
+            <p>cena regularna 170 zł</p>
+            <p class="discount">cena przez formularz 150 zł</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Narożnik 3 osobowy</p></div>
+        <div class="value">
+            <p>cena regularna 220 zł</p>
+            <p class="discount">cena przez formularz 200 zł</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Narożnik większy niż 2,5 m</p></div>
+        <div class="value">
+            <p>wycena indywidualna</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Fotel uszak</p></div>
+        <div class="value">
+            <p>cena regularna 90 zł</p>
+            <p class="discount">cena przez formularz 80 zł</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Fotel mały</p></div>
+        <div class="value">
+            <p>cena regularna 70 zł</p>
+            <p class="discount">cena przez formularz 60 zł</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Krzesło z oparciem</p></div>
+        <div class="value">
+            <p>cena regularna 30 zł</p>
+            <p class="discount">cena przez formularz 25 zł</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Krzesło biurowe obrotowe</p></div>
+        <div class="value">
+            <p>cena regularna 40 zł</p>
+            <p class="discount">cena przez formularz 35 zł</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Pufa</p></div>
+        <div class="value">
+            <p>cena regularna 40 zł</p>
+            <p class="discount">cena przez formularz 35 zł</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Rama łóżka z wezgłowiem</p></div>
+        <div class="value">
+            <p>cena regularna 140 zł</p>
+            <p class="discount">cena przez formularz 120 zł</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Poduszka</p></div>
+        <div class="value">
+            <p>cena regularna 17 zł</p>
+            <p class="discount">cena przez formularz 15 zł</p>
+        </div>
+    </li>
+    <li class="price__content-element">
+        <div class="key"><p>Pranie materiałów plamoodpornych (np. penta, carabu)</p></div>
+        <div class="value">
+            <p>wycena indywidualna</p>
+        </div>
+    </li>
+</ul>
+		<h1 class="price__content-title">Pranie materacy</h1>
+		<ul class="price__content-list">
 		  <li class="price__content-element">
-			<div class="key"><p>Wersalka</p></div>
-			<div class="value"><p>od 120 zł</p></div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key"><p>Sofa 2 osobowa</p></div>
-			<div class="value">
-				<p>cena regularna 145 zł</p>
-				<p class="discount">cena przez fromularz 130 zł</p>
+			<div class="key">
+			  <p>
+				Pranie materaca jednoosobowego z jednej strony / z obu stron
+			  </p>
 			</div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key"><p>Sofa 3 osobowa</p></div>
-			<div class="value">
-				<p>cena regularna 170 zł</p>
-				<p class="discount">cena przez formularz 150 zł</p>
-			</div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key"><p>Narożnik 3 osobowy</p></div>
-			<div class="value">
-				<p>cena regularna 220 zł</p>
-				<p class="discount">cena przez formularz 200 zł</p>
-			</div>
+			<div class="value"><p>70/140 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
-			  <p>Narożnik większy niż 3 os (powyżej 2.5m)</p>
+			  <p>Pranie materaca dwuosobowego z jednej strony / z obu stron</p>
 			</div>
-			<div class="value"><p>wycena indywidualna</p></div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>Narożnik w kształcie litery U</p>
+			<div class="value"><p>cena regularna 125/220 zł</p>
+			<p class="discount">cena przez formularz 110/200</p>
 			</div>
-			<div class="value"><p>od 250 zł</p></div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>Fotel</p>
-			</div>
-			<div class="value"><p>od 90 zł</p></div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>Krzesło</p>
-			</div>
-			<div class="value"><p>15-30 zł</p></div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>Krzesło samo oparcie</p>
-			</div>
-			<div class="value">
-				<p>cena regularna 25 zł</p>
-				<p class="discount">cena przez formularz 20 zł</p>
-			</div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>Krzesło biurowe</p>
-			</div>
-			<div class="value"><p>od 40 zł</p></div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>Pufa</p>
-			</div>
-			<div class="value"><p>od 40 zł</p></div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>Rama łóżka z wezgłowiem</p>
-			</div>
-			<div class="value">
-				<p>cena regularna 140 zł</p>
-				<p class="discount">cena przez formularz 120 zł</p>
-			</div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>Poduszki</p>
-			</div>
-			<div class="value">
-				<p>cena regularna 17 zł</p>
-				<p class="discount">cena przez formularz 15 zł</p>
-			</div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>Pranie materiałów plamoodpornych (np. penta, carabu)</p>
-			</div>
-			<div class="value"><p>wycena indywidualna</p></div>
 		  </li>
 		</ul>
 		<h1 class="price__content-title">Usługi dodatkowe</h1>
@@ -118,11 +128,11 @@
 		<ul class="price__content-list">
 		  <li class="price__content-element">
 			<div class="key"><p>Dywan syntetyczny krótki włos</p></div>
-			<div class="value"><p>15 zł m2</p></div>
+			<div class="value"><p>17 zł m2</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key"><p>Dywan syntetyczny długi włos (Shaggy)</p></div>
-			<div class="value"><p>17 zł m2</p></div>
+			<div class="value"><p>20 zł m2</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key"><p>Wykładzina dywanowa</p></div>
@@ -140,32 +150,15 @@
 			<div class="value"><p>wycena indywidualna</p></div>
 		  </li>
 		</ul>
-		<h1 class="price__content-title">Pranie materacy</h1>
-		<ul class="price__content-list">
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>
-				Pranie materaca jednoosobowego z jednej strony / z obu stron
-			  </p>
-			</div>
-			<div class="value"><p>od 60/90 zł</p></div>
-		  </li>
-		  <li class="price__content-element">
-			<div class="key">
-			  <p>Pranie materaca dwuosobowego z jednej strony / z obu stron</p>
-			</div>
-			<div class="value"><p>od 100/150 zł</p></div>
-		  </li>
-		</ul>
 		<h1 class="price__content-title">Pranie tapicerki samochodowej</h1>
 		<ul class="price__content-list">
 		  <li class="price__content-element">
 			<div class="key"><p>Przednie fotele plus kanapa</p></div>
-			<div class="value"><p>od 160 zł</p></div>
+			<div class="value"><p>od 170 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key"><p>Czyszczenie podsufitki</p></div>
-			<div class="value"><p>100 zł</p></div>
+			<div class="value"><p>od 100 zł</p></div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key"><p>Odkurzanie i pranie podłogi</p></div>
@@ -329,6 +322,31 @@ export default {
 		&-element:hover {
 			background-color: #bbb;
 		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	&-button {
+		display: block;
+    	margin: 50px auto 0;
+		padding: 0 15px;
+    	min-height: 50px;
+    	background-color: #03989e;
+    	color: white;
+    	border: 0;
+    	cursor: pointer;
+    	transition: 0.4s;
+    	border-radius: 30px;
+    	font-family: Saira Condensed, sans-serif;
+    	font-size: 20px;
+    	font-weight: bold;
+    	letter-spacing: 1px;
+	}
+
+	&-button:hover {
+		background-color: #0ae1e9;
 	}
 
 	.bonus {
