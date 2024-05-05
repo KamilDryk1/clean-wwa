@@ -98,7 +98,9 @@
 				Pranie materaca jednoosobowego z jednej strony / z obu stron
 			  </p>
 			</div>
-			<div class="value"><p>70/140 zł</p></div>
+			<div class="value"><p>cena regularna 70/140 zł</p>
+				<p class="discount">cena przez formularz 60/110 zł</p>
+			</div>
 		  </li>
 		  <li class="price__content-element">
 			<div class="key">
