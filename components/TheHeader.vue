@@ -16,7 +16,7 @@
 		  <p>{{ subtitle }}</p>
 		  <div class="header__content-text-buttons">
 		  	<button v-if="tel" class="header__content-text-button"><a :href="tel">ZADZWOŃ</a></button>
-		  	<button v-if="mail" @click="openForm" class="header__content-text-button mail">ZAMÓW Z RABATEM</button>
+		  	<button v-if="mail" @click="openForm" class="header__content-text-button mail">ZAMÓW</button>
 			</div>
 		</div>
 	  </div>
