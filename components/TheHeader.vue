@@ -15,8 +15,8 @@
 		  </h2>
 		  <p>{{ subtitle }}</p>
 		  <div class="header__content-text-buttons">
-		  	<button v-if="tel" class="header__content-text-button"><a :href="tel">ZADZWOŃ</a></button>
-		  	<button v-if="mail" @click="openForm" class="header__content-text-button mail">ZAMÓW</button>
+		  	<button v-if="tel" class="header__content-text-button"><a :href="tel">ZAMÓW z rabatem -10%</a></button>
+		  	<button v-if="mail" @click="openForm" class="header__content-text-button mail">NAPISZ</button>
 			</div>
 		</div>
 	  </div>
@@ -167,7 +167,7 @@ export default {
 	  &-button {
 		display: block;
 		margin-top: 40px;
-		width: 200px;
+		width: 220px;
 		height: 50px;
 		background-color: #03989e;
 		color: white;
