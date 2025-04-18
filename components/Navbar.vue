@@ -44,6 +44,14 @@
                     >Usługi</nuxt-link
                   >
                 </li>
+				<li class="navbar__content-overlay-item">
+                  <nuxt-link
+                    to="/dla-firm"
+                    class="menu-link"
+                    @click.native="closeModal"
+                    >Dla firm</nuxt-link
+                  >
+                </li>
                 <li class="navbar__content-overlay-item">
                   <nuxt-link
                     to="/blog"
@@ -83,6 +91,14 @@
                   class="menu-link"
                   @click.native="closeModal"
                   >Usługi</nuxt-link
+                >
+              </li>
+			  <li class="navbar__content-menu-item">
+                <nuxt-link
+                  to="/dla-firm"
+                  class="menu-link"
+                  @click.native="closeModal"
+                  >Dla firm</nuxt-link
                 >
               </li>
               <li class="navbar__content-menu-item">
