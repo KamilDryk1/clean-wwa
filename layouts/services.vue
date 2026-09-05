@@ -1,20 +1,13 @@
 <template>
-  <div>
-    <Navbar :img="img" :title="title" :subtitle="subtitle" />
+  <div class="content-page">
+    <Navbar />
+    <PageIntro image="/assets/img/Uslugi/uslugi-img.jpg" eyebrow="Usługi" title="Pranie tapicerki, materacy i wykładzin w Warszawie" description="Profesjonalne czyszczenie z dojazdem do domu lub firmy. Poznaj nasze usługi i wybierz rozwiązanie dla siebie." />
     <Nuxt />
     <Footer />
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      video: null,
-      img: "/assets/img/Uslugi/uslugi-img.jpg",
-      title: "Usługi",
-      subtitle: "Nasze usługi - profesjonalizm, który spełnia Twoje oczekiwania."
-    };
-  },
-};
+import seo from '~/mixins/seo';
+export default { mixins: [seo] };
 </script>

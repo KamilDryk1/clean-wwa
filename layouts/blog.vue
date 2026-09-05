@@ -1,20 +1,13 @@
 <template>
-  <div>
-    <Navbar :img="img" :title="title" :subtitle="subtitle" />
+  <div class="content-page">
+    <Navbar />
+    <PageIntro image="/assets/img/Uslugi/meblowa.jpg" eyebrow="Pytania klientów" title="Odpowiedzi na Twoje pytania" description="Dowiedz się więcej o naszych usługach." />
     <Nuxt />
     <Footer />
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      video: null,
-      img: "/assets/img/Blog/blog-img.jpg",
-      title: "Blog",
-      subtitle: "Odkryj świat naszej branży i bądź na bieżąco z najnowszymi trendami i rozwiązaniami."
-    };
-  },
-};
+import seo from '~/mixins/seo';
+export default { mixins: [seo] };
 </script>

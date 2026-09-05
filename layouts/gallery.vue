@@ -1,20 +1,13 @@
 <template>
-  <div>
-    <Navbar :img="img" :title="title" :subtitle="subtitle" />
+  <div class="content-page">
+    <Navbar />
+    <PageIntro image="/assets/img/Galeria/gallery-img.jpg" eyebrow="Galeria" title="Zobacz efekty naszej pracy" description="Nasze realizacje przed i po czyszczeniu. Tapicerka, która odzyskała świeżość w domach i firmach naszych klientów." />
     <Nuxt />
     <Footer />
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      video: null,
-      img: "/assets/img/Galeria/gallery-img.jpg",
-      title: "Galeria",
-      subtitle: "Piękno i czystość łączą siły - odkryj nasze prace."
-    };
-  },
-};
+import seo from '~/mixins/seo';
+export default { mixins: [seo] };
 </script>

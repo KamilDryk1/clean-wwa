@@ -1,26 +1,19 @@
 <template>
-	<section class="contact">
-		<div class="contact__container">
-			<div class="contact__content">
-				<div class="contact__content-details">
-					<h3>CLEAN WWA</h3>
-
-					<h5><a href="tel:+48733740112">tel. +48 733 740 112</a></h5>
-
-					<h5><a href="mailto:cleanwwa@gmail.com">cleanwwa@gmail.com</a></h5>
-
-					<h5>ul. Kasprzaka 29c</h5>
-
-					<h5>01-234 Warszawa</h5>
-
-					<h5>NIP 5060122821</h5>
-				</div>
-
-				<ContactForm />
-
-				<div class="contact__content-terms">
-					<h1>Regulamin świadczonych usług firmy CLEAN WWA</h1>
-  					<p>Usługi firmy CLEAN WWA świadczone zgodnie z regulaminem. Regulamin określa zasady świadczonych usług przez firmę tj. pranie tapicerki meblowej,
+  <main class="content-wrap content-section contact-page">
+    <div class="contact-page__grid">
+      <section class="contact-page__details">
+        <h2 v-reveal>Jesteśmy do Twojej dyspozycji</h2>
+        <p class="section-lead">Opowiedz nam, co chcesz wyczyścić. Ustalimy zakres prac, wycenę i termin wizyty.</p>
+        <a class="contact-detail" href="tel:+48733740112"><span class="contact-detail__label">Zadzwoń do nas</span><strong>733 740 112</strong><span>Codziennie 7:00–23:00</span></a>
+        <a class="contact-detail" href="mailto:cleanwwa@gmail.com"><span class="contact-detail__label">Napisz do nas</span><strong>cleanwwa@gmail.com</strong></a>
+        <div class="contact-detail"><span class="contact-detail__label">Dane firmy</span><strong>CLEANWWA</strong><span>ul. Kasprzaka 29c, 01-234 Warszawa</span><span>NIP 5060122821</span></div>
+        <p class="content-note">Usługi wykonujemy mobilnie, bezpośrednio u klienta.</p>
+      </section>
+      <ContactForm />
+    </div>
+    <section id="regulamin" class="contact-page__terms">
+      <h2 v-reveal>Regulamin świadczonych usług firmy CLEAN WWA</h2>
+<p>Usługi firmy CLEAN WWA świadczone zgodnie z regulaminem. Regulamin określa zasady świadczonych usług przez firmę tj. pranie tapicerki meblowej,
   					samochodowej, wykładzin oraz innych usług zawartych w oferowanych usługach.</p>
   					<ol>
   						<li>Firma przyjmuje zlecenia prania tapicerki meblowej, samochodowej oraz innych
@@ -56,59 +49,25 @@
   						<li>W sprawach nieuregulowanych niniejszym regulaminem stosuje się odpowiednio
   						przepisy kodeksu cywilnego.</li>
   					</ol>
-				</div>
-			</div>
-		</div>
-	</section>
+    </section>
+  </main>
 </template>
 
 <script>
-import ContactForm from '~/components/ContactForm.vue';
-
-export default {
-	layout: "contact",
-
-	components: {ContactForm}
-}
+export default { layout: 'contact' };
 </script>
 
 <style lang="scss" scoped>
-.contact {
-	&__container {
-		max-width: 1440px;
-   		margin: 0 auto;
-	}
-
-	&__content {
-		padding: 0 5%;
-		&-details {
-			margin: 50px auto 0; 
-			text-align: center;
-
-			h3 {
-				font-size: 26px;
-			}
-
-			h5 {
-				font-size: 20px;
-
-				a {
-					color: black;
-					text-decoration: none;
-				}
-			}
-		}
-
-		&-terms {
-			max-width: 1000px;
-			margin: 0 auto 50px;
-			text-align: justify;
-
-			h1 {
-				text-align: center;
-				margin-bottom: 10px;
-			}
-		}
-	}
-}
+.contact-page__grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 56px; align-items: start; }
+.contact-detail { display: flex; flex-direction: column; gap: 3px; padding: 22px 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
+.contact-detail__label { color: var(--muted); font-size: 16px; }
+.contact-detail strong { font-size: 28px; color: var(--brand); overflow-wrap: anywhere; }
+.contact-detail span:last-child:not(.contact-detail__label) { font-size: 18px; }
+.contact-detail:hover strong { color: #025f63; }
+.contact-page__terms { margin-top: var(--section-space); padding-top: var(--section-space); border-top: 1px solid var(--line); max-width: 980px; }
+.contact-page__terms > p { color: var(--muted); margin-bottom: 28px; }
+.contact-page__terms ol { padding-left: 26px; font-size: 18px; }
+.contact-page__terms li { padding-left: 10px; margin-bottom: 15px; }
+.contact-page__terms li::marker { color: var(--brand); font-weight: 700; }
+@media (max-width: 850px) { .contact-page__grid { grid-template-columns: 1fr; gap: 36px; } }
 </style>

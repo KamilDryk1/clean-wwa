@@ -1,0 +1,290 @@
+{
+  "/assets/img/DlaFirm/companies-background.jpg": {
+    "src": "/assets/optimized/dlafirm-companies-background-1600.webp",
+    "srcset": "/assets/optimized/dlafirm-companies-background-480.webp 480w, /assets/optimized/dlafirm-companies-background-960.webp 960w, /assets/optimized/dlafirm-companies-background-1600.webp 1600w",
+    "width": 1600,
+    "height": 1066
+  },
+  "/assets/img/DlaFirm/IMG_3747.jpeg": {
+    "src": "/assets/optimized/dlafirm-img_3747-1600.webp",
+    "srcset": "/assets/optimized/dlafirm-img_3747-480.webp 480w, /assets/optimized/dlafirm-img_3747-960.webp 960w, /assets/optimized/dlafirm-img_3747-1600.webp 1600w",
+    "width": 1600,
+    "height": 2133
+  },
+  "/assets/img/Galeria/img0.jpg": {
+    "src": "/assets/optimized/galeria-img0-600.webp",
+    "srcset": "/assets/optimized/galeria-img0-480.webp 480w, /assets/optimized/galeria-img0-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img1.jpg": {
+    "src": "/assets/optimized/galeria-img1-600.webp",
+    "srcset": "/assets/optimized/galeria-img1-480.webp 480w, /assets/optimized/galeria-img1-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img2.jpg": {
+    "src": "/assets/optimized/galeria-img2-600.webp",
+    "srcset": "/assets/optimized/galeria-img2-480.webp 480w, /assets/optimized/galeria-img2-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img3.jpg": {
+    "src": "/assets/optimized/galeria-img3-600.webp",
+    "srcset": "/assets/optimized/galeria-img3-480.webp 480w, /assets/optimized/galeria-img3-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img4.jpg": {
+    "src": "/assets/optimized/galeria-img4-600.webp",
+    "srcset": "/assets/optimized/galeria-img4-480.webp 480w, /assets/optimized/galeria-img4-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img5.jpg": {
+    "src": "/assets/optimized/galeria-img5-600.webp",
+    "srcset": "/assets/optimized/galeria-img5-480.webp 480w, /assets/optimized/galeria-img5-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img6.jpg": {
+    "src": "/assets/optimized/galeria-img6-600.webp",
+    "srcset": "/assets/optimized/galeria-img6-480.webp 480w, /assets/optimized/galeria-img6-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img7.jpg": {
+    "src": "/assets/optimized/galeria-img7-600.webp",
+    "srcset": "/assets/optimized/galeria-img7-480.webp 480w, /assets/optimized/galeria-img7-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img8.jpg": {
+    "src": "/assets/optimized/galeria-img8-600.webp",
+    "srcset": "/assets/optimized/galeria-img8-480.webp 480w, /assets/optimized/galeria-img8-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img9.jpg": {
+    "src": "/assets/optimized/galeria-img9-600.webp",
+    "srcset": "/assets/optimized/galeria-img9-480.webp 480w, /assets/optimized/galeria-img9-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img10.jpg": {
+    "src": "/assets/optimized/galeria-img10-600.webp",
+    "srcset": "/assets/optimized/galeria-img10-480.webp 480w, /assets/optimized/galeria-img10-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img11.jpg": {
+    "src": "/assets/optimized/galeria-img11-600.webp",
+    "srcset": "/assets/optimized/galeria-img11-480.webp 480w, /assets/optimized/galeria-img11-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img12.jpg": {
+    "src": "/assets/optimized/galeria-img12-600.webp",
+    "srcset": "/assets/optimized/galeria-img12-480.webp 480w, /assets/optimized/galeria-img12-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img13.jpg": {
+    "src": "/assets/optimized/galeria-img13-600.webp",
+    "srcset": "/assets/optimized/galeria-img13-480.webp 480w, /assets/optimized/galeria-img13-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img14.jpg": {
+    "src": "/assets/optimized/galeria-img14-600.webp",
+    "srcset": "/assets/optimized/galeria-img14-480.webp 480w, /assets/optimized/galeria-img14-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img15.jpg": {
+    "src": "/assets/optimized/galeria-img15-600.webp",
+    "srcset": "/assets/optimized/galeria-img15-480.webp 480w, /assets/optimized/galeria-img15-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img16.jpg": {
+    "src": "/assets/optimized/galeria-img16-600.webp",
+    "srcset": "/assets/optimized/galeria-img16-480.webp 480w, /assets/optimized/galeria-img16-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Galeria/img17.jpg": {
+    "src": "/assets/optimized/galeria-img17-600.webp",
+    "srcset": "/assets/optimized/galeria-img17-480.webp 480w, /assets/optimized/galeria-img17-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Obszar/warszawa.jpg": {
+    "src": "/assets/optimized/obszar-warszawa-1600.webp",
+    "srcset": "/assets/optimized/obszar-warszawa-480.webp 480w, /assets/optimized/obszar-warszawa-960.webp 960w, /assets/optimized/obszar-warszawa-1600.webp 1600w",
+    "width": 1600,
+    "height": 1192
+  },
+  "/assets/img/HomePage/description-2.jpg": {
+    "src": "/assets/optimized/homepage-description-2-599.webp",
+    "srcset": "/assets/optimized/homepage-description-2-480.webp 480w, /assets/optimized/homepage-description-2-599.webp 599w",
+    "width": 599,
+    "height": 400
+  },
+  "/assets/img/gwarancja-satysfakcji.png": {
+    "src": "/assets/optimized/gwarancja-satysfakcji-296.webp",
+    "srcset": "/assets/optimized/gwarancja-satysfakcji-296.webp 296w",
+    "width": 296,
+    "height": 296
+  },
+  "/assets/img/doswiadczenie.png": {
+    "src": "/assets/optimized/doswiadczenie-320.webp",
+    "srcset": "/assets/optimized/doswiadczenie-320.webp 320w",
+    "width": 320,
+    "height": 400
+  },
+  "/assets/img/bezpieczne-platnosci.png": {
+    "src": "/assets/optimized/bezpieczne-platnosci-980.webp",
+    "srcset": "/assets/optimized/bezpieczne-platnosci-480.webp 480w, /assets/optimized/bezpieczne-platnosci-960.webp 960w, /assets/optimized/bezpieczne-platnosci-980.webp 980w",
+    "width": 980,
+    "height": 838
+  },
+  "/assets/img/terminowosc.png": {
+    "src": "/assets/optimized/terminowosc-298.webp",
+    "srcset": "/assets/optimized/terminowosc-298.webp 298w",
+    "width": 298,
+    "height": 238
+  },
+  "/assets/img/dojazd-gratis.png": {
+    "src": "/assets/optimized/dojazd-gratis-834.webp",
+    "srcset": "/assets/optimized/dojazd-gratis-480.webp 480w, /assets/optimized/dojazd-gratis-834.webp 834w",
+    "width": 834,
+    "height": 620
+  },
+  "/assets/img/profesjonalny-sprzet.png": {
+    "src": "/assets/optimized/profesjonalny-sprzet-800.webp",
+    "srcset": "/assets/optimized/profesjonalny-sprzet-480.webp 480w, /assets/optimized/profesjonalny-sprzet-800.webp 800w",
+    "width": 800,
+    "height": 768
+  },
+  "/assets/img/HomePage/carousel-photo-1.jpg": {
+    "src": "/assets/optimized/homepage-carousel-photo-1-600.webp",
+    "srcset": "/assets/optimized/homepage-carousel-photo-1-480.webp 480w, /assets/optimized/homepage-carousel-photo-1-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/HomePage/carousel-photo-8.jpg": {
+    "src": "/assets/optimized/homepage-carousel-photo-8-600.webp",
+    "srcset": "/assets/optimized/homepage-carousel-photo-8-480.webp 480w, /assets/optimized/homepage-carousel-photo-8-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/HomePage/carousel-photo-3.jpg": {
+    "src": "/assets/optimized/homepage-carousel-photo-3-600.webp",
+    "srcset": "/assets/optimized/homepage-carousel-photo-3-480.webp 480w, /assets/optimized/homepage-carousel-photo-3-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/HomePage/carousel-photo-7.jpg": {
+    "src": "/assets/optimized/homepage-carousel-photo-7-600.webp",
+    "srcset": "/assets/optimized/homepage-carousel-photo-7-480.webp 480w, /assets/optimized/homepage-carousel-photo-7-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/HomePage/carousel-photo-5.jpg": {
+    "src": "/assets/optimized/homepage-carousel-photo-5-600.webp",
+    "srcset": "/assets/optimized/homepage-carousel-photo-5-480.webp 480w, /assets/optimized/homepage-carousel-photo-5-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/HomePage/carousel-photo-6.jpg": {
+    "src": "/assets/optimized/homepage-carousel-photo-6-600.webp",
+    "srcset": "/assets/optimized/homepage-carousel-photo-6-480.webp 480w, /assets/optimized/homepage-carousel-photo-6-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/HomePage/carousel-photo-4.jpg": {
+    "src": "/assets/optimized/homepage-carousel-photo-4-600.webp",
+    "srcset": "/assets/optimized/homepage-carousel-photo-4-480.webp 480w, /assets/optimized/homepage-carousel-photo-4-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/HomePage/carousel-photo-2.jpg": {
+    "src": "/assets/optimized/homepage-carousel-photo-2-600.webp",
+    "srcset": "/assets/optimized/homepage-carousel-photo-2-480.webp 480w, /assets/optimized/homepage-carousel-photo-2-600.webp 600w",
+    "width": 600,
+    "height": 600
+  },
+  "/assets/img/Uslugi/meblowa.jpg": {
+    "src": "/assets/optimized/uslugi-meblowa-800.webp",
+    "srcset": "/assets/optimized/uslugi-meblowa-480.webp 480w, /assets/optimized/uslugi-meblowa-800.webp 800w",
+    "width": 800,
+    "height": 450
+  },
+  "/assets/img/Uslugi/dywany.jpg": {
+    "src": "/assets/optimized/uslugi-dywany-800.webp",
+    "srcset": "/assets/optimized/uslugi-dywany-480.webp 480w, /assets/optimized/uslugi-dywany-800.webp 800w",
+    "width": 800,
+    "height": 450
+  },
+  "/assets/img/Uslugi/materac-przed-po.jpg": {
+    "src": "/assets/optimized/uslugi-materac-przed-po-1600.webp",
+    "srcset": "/assets/optimized/uslugi-materac-przed-po-480.webp 480w, /assets/optimized/uslugi-materac-przed-po-960.webp 960w, /assets/optimized/uslugi-materac-przed-po-1600.webp 1600w",
+    "width": 1600,
+    "height": 1143
+  },
+  "/assets/img/Uslugi/auto.jpg": {
+    "src": "/assets/optimized/uslugi-auto-800.webp",
+    "srcset": "/assets/optimized/uslugi-auto-480.webp 480w, /assets/optimized/uslugi-auto-800.webp 800w",
+    "width": 800,
+    "height": 450
+  },
+  "/assets/img/Uslugi/skora.jpg": {
+    "src": "/assets/optimized/uslugi-skora-800.webp",
+    "srcset": "/assets/optimized/uslugi-skora-480.webp 480w, /assets/optimized/uslugi-skora-800.webp 800w",
+    "width": 800,
+    "height": 450
+  },
+  "/assets/img/Uslugi/posadzki.jpg": {
+    "src": "/assets/optimized/uslugi-posadzki-800.webp",
+    "srcset": "/assets/optimized/uslugi-posadzki-480.webp 480w, /assets/optimized/uslugi-posadzki-800.webp 800w",
+    "width": 800,
+    "height": 450
+  },
+  "/assets/img/Uslugi/wynajem.jpg": {
+    "src": "/assets/optimized/uslugi-wynajem-800.webp",
+    "srcset": "/assets/optimized/uslugi-wynajem-480.webp 480w, /assets/optimized/uslugi-wynajem-800.webp 800w",
+    "width": 800,
+    "height": 450
+  },
+  "/assets/img/Kontakt/kontakt-img.jpg": {
+    "src": "/assets/optimized/kontakt-kontakt-img-1600.webp",
+    "srcset": "/assets/optimized/kontakt-kontakt-img-480.webp 480w, /assets/optimized/kontakt-kontakt-img-960.webp 960w, /assets/optimized/kontakt-kontakt-img-1600.webp 1600w",
+    "width": 1600,
+    "height": 900
+  },
+  "/assets/img/HomePage/background-img.jpg": {
+    "src": "/assets/optimized/homepage-background-img-1440.webp",
+    "srcset": "/assets/optimized/homepage-background-img-480.webp 480w, /assets/optimized/homepage-background-img-960.webp 960w, /assets/optimized/homepage-background-img-1440.webp 1440w",
+    "width": 1440,
+    "height": 810
+  },
+  "/assets/img/Galeria/gallery-img.jpg": {
+    "src": "/assets/optimized/galeria-gallery-img-1440.webp",
+    "srcset": "/assets/optimized/galeria-gallery-img-480.webp 480w, /assets/optimized/galeria-gallery-img-960.webp 960w, /assets/optimized/galeria-gallery-img-1440.webp 1440w",
+    "width": 1440,
+    "height": 810
+  },
+  "/assets/img/Cennik/price-list-img.jpg": {
+    "src": "/assets/optimized/cennik-price-list-img-1440.webp",
+    "srcset": "/assets/optimized/cennik-price-list-img-480.webp 480w, /assets/optimized/cennik-price-list-img-960.webp 960w, /assets/optimized/cennik-price-list-img-1440.webp 1440w",
+    "width": 1440,
+    "height": 810
+  },
+  "/assets/img/Uslugi/uslugi-img.jpg": {
+    "src": "/assets/optimized/uslugi-uslugi-img-1600.webp",
+    "srcset": "/assets/optimized/uslugi-uslugi-img-480.webp 480w, /assets/optimized/uslugi-uslugi-img-960.webp 960w, /assets/optimized/uslugi-uslugi-img-1600.webp 1600w",
+    "width": 1600,
+    "height": 900
+  }
+}

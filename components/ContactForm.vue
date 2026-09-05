@@ -1,201 +1,70 @@
 <template>
-	<div class="contactForm">
-		<div class="contactForm__container">
-			<div class="contactForm__content">
-				<form class="contactForm__content-form" @submit.prevent="submitForm">
-					<h2 class="contactForm__content-form-title">Formularz kontaktowy</h2>
-
-    				<input class="contactForm__content-form-input" type="text" placeholder="Imię" name="name" v-model="name" required/>
-
-					<input class="contactForm__content-form-input" type="tel" placeholder="Telefon" name="phone" v-model="phone" required/>
-
-					<input class="contactForm__content-form-input" type="text" placeholder="Preferowany termin usługi (data i godzina)" name="date" v-model="date" required/>
-
-    				<textarea class="contactForm__content-form-textarea" name="message" placeholder="Informacje o zamawianej usłudze, rodzaj i ilość mebli itd." v-model="message" required></textarea>
-
-					<div class="contactForm__content-form-checkbox">
-						<input 	class="contactForm__content-form-checkbox-input" type="checkbox" name="checkbox" v-model="agreement" required/>
-
-						<label class="contactForm__content-form-checkbox-label" for="checkbox">Wyrażam zgodę na przetwarzanie danych osobowych</label>
-					</div>
-
-					<h4 class="contactForm__content-form-error" v-if="error">Podczas wysyłania wystąpił błąd.</h4>
-
-    				<button type="submit" class="contactForm__content-form-button">Wyślij</button>
-				</form>
-
-				<div v-if="showOverlay" @click="closeForm" class="contactForm__content-overlay"></div>
-			</div>
-		</div>
-	</div>
+  <div class="contact-form" :class="{ 'contact-form--modal': showOverlay }" @click.self="closeForm">
+    <form ref="form" class="form-card" :role="showOverlay ? 'dialog' : undefined" :aria-modal="showOverlay ? 'true' : undefined" :aria-labelledby="`${idPrefix}-title`" @submit.prevent="submitForm" @keydown="onKeydown">
+      <button v-if="showOverlay" class="contact-form__close" type="button" aria-label="Zamknij formularz" @click="closeForm">×</button>
+      <h2 :id="`${idPrefix}-title`">Formularz kontaktowy</h2>
+      <div class="contact-form__row">
+        <div><label :for="`${idPrefix}-name`">Imię</label><input :id="`${idPrefix}-name`" v-model.trim="name" name="name" autocomplete="name" required maxlength="150" placeholder="Jak się do Ciebie zwracać?" /></div>
+        <div><label :for="`${idPrefix}-phone`">Telefon</label><input :id="`${idPrefix}-phone`" v-model.trim="phone" name="phone" type="tel" autocomplete="tel" required maxlength="40" placeholder="Twój numer telefonu" /></div>
+      </div>
+      <label :for="`${idPrefix}-date`">Preferowany termin</label>
+      <input :id="`${idPrefix}-date`" v-model.trim="date" name="date" required maxlength="150" placeholder="Data i godzina lub dogodna pora dnia" />
+      <label :for="`${idPrefix}-message`">Co chcesz wyczyścić?</label>
+      <textarea :id="`${idPrefix}-message`" v-model.trim="message" name="message" required maxlength="5000" rows="4" placeholder="Rodzaj i ilość mebli, lokalizacja oraz dodatkowe informacje"></textarea>
+      <label class="form-consent" :for="`${idPrefix}-consent`">
+        <input :id="`${idPrefix}-consent`" v-model="agreement" type="checkbox" required />
+        <span>Wyrażam zgodę na przetwarzanie danych w celu odpowiedzi na zapytanie. <a href="https://drive.proton.me/urls/K5J2WAJC84#tkmTmLmTWivf" target="_blank" rel="noopener noreferrer">Polityka prywatności</a>.</span>
+      </label>
+      <p v-if="status === 'error'" class="form-error" role="alert">Nie udało się wysłać wiadomości. Spróbuj ponownie lub zadzwoń: 733 740 112.</p>
+      <p v-if="status === 'success'" class="form-success" role="status">Dziękujemy! Wiadomość została wysłana. Skontaktujemy się z Tobą w sprawie zlecenia.</p>
+      <button type="submit" class="content-button" :disabled="status === 'sending'">{{ status === 'sending' ? 'Wysyłanie…' : 'Wyślij zapytanie' }}</button>
+    </form>
+  </div>
 </template>
 
 <script>
+import { sendEnquiry } from '~/utils/enquiry';
 export default {
-	data() {
-		return {
-			access_key: "d1bd7e1e-e4a9-4452-a7ab-216176b86f74",
- 			name: "",
-  			phone: "",
-			date: "",
-  			message: "",
-			agreement: false,
-			error: false,
-		}
-	},
-
-	props: ['showOverlay'],
-
-	emits: ['closeForm'],
-
-	methods: {
-		async submitForm() {
-			const result = {
-				access_key: this.access_key,
-				name: this.name,
-				phone: this.phone,
-				date: this.date,
-				message: this.message,
-			}
-
-			if (!result.name || !result.phone || !result.date || !result.message || !this.agreement ) {
-				return;
-			}
-
-			try {
-				const body = JSON.stringify(result);
-
-				const response = await fetch('https://api.web3forms.com/submit', {
-					method: 'POST',
-					headers: {'Content-Type': 'application/json'},
-					body: body,
-				});
-
-				if (response.status === 200) {
-					this.name = "";
-					this.phone = "";
-					this.date = "";
-					this.message = "";
-					this.error = false
-					this.closeForm();
-				}
-			} catch (error) {
-				console.log(error);
-				this.error = true;
-			}
-		},
-
-		closeForm() {
-			this.$emit('closeForm');
-		}
-	}
-}
+  props: { showOverlay: Boolean, idPrefix: { type: String, default: 'contact' } },
+  data() { return { name: '', phone: '', date: '', message: '', agreement: false, status: 'idle' }; },
+  mounted() {
+    if (this.showOverlay) {
+      document.documentElement.classList.add('contact-dialog-open');
+      this.$refs.form.querySelector('input').focus();
+    }
+  },
+  beforeDestroy() { if (this.showOverlay) document.documentElement.classList.remove('contact-dialog-open'); },
+  methods: {
+    async submitForm() {
+      if (this.status === 'sending' || !this.name || !this.phone || !this.date || !this.message || !this.agreement) return;
+      this.status = 'sending';
+      try {
+        await sendEnquiry({ name: this.name, phone: this.phone, date: this.date, message: this.message });
+        this.name = this.phone = this.date = this.message = '';
+        this.agreement = false;
+        this.status = 'success';
+      } catch (_) { this.status = 'error'; }
+    },
+    closeForm() { if (this.showOverlay) this.$emit('closeForm'); },
+    onKeydown(event) {
+      if (!this.showOverlay) return;
+      if (event.key === 'Escape') { event.preventDefault(); this.closeForm(); }
+      if (event.key !== 'Tab') return;
+      const items = [...this.$refs.form.querySelectorAll('button:not(:disabled), input, textarea, a')];
+      const first = items[0], last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-.contactForm {
-	height: 600px;
-
-	&__container {
-		width: 100%;
-		height: 100%;
-	}
-
-	&__content {
-		width: 100%;
-		height: 100%;
-		position: relative;
-
-		&-overlay {
-			width: 100%;
-			height: 100%;
-			position: fixed;
-			top: 0;
-			left: 0;
-			background-color: rgba(30, 30, 30, 0.5);
-			z-index: 800;
-		}
-
-		&-form {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: space-around;
-			gap: 10px;
-			min-height: 60%;
-			max-height: 800px;
-			width: 60%;
-			max-width: 600px;
-			z-index: 801;
-			background-color: #fff;
-			border-radius: 10px;
-			padding: 10px 0;
-
-			&-input {
-				width: 80%;
-				height: 50px;
-				background-color: #f2f2f2;
-				border: 0;
-				border-radius: 10px;
-				padding-left: 10px;
-				padding-right: 10px;
-				font-size: 16px;
-				font-family: Saira Condensed, sans-serif;
-			}
-
-			&-textarea {
-				width: 80%;
-				min-height: 160px;
-				background-color: #f2f2f2;
-				border: 0;
-				border-radius: 10px;
-				padding: 10px;
-				font-size: 16px;
-				resize: none;
-				font-family: Saira Condensed, sans-serif;
-			}
-
-			&-button {
-				display: block;
-				background-color: #03989e;
-				width: 200px;
-				height: 50px;
-				color: white;
-				border: 0;
-				cursor: pointer;
-				transition: 0.4s;
-				border-radius: 30px;
-				font-size: 20px;
-				font-weight: bold;
-				transition: 0.4s;
-				font-family: Saira Condensed, sans-serif;
-			}
-
-			&-button:hover {
-				background-color: #09ebf3;
-	  		}
-
-			&-checkbox {
-				display: flex;
-				justify-content: flex-start;
-				gap: 10px;
-				width: 80%;
-			}
-
-			&-error {
-				color: red;
-			}
-		}
-
-		@media(max-width: 600px) {
-			&-form {
-				width: 90%;
-			}
-		}
-	}
-}
+.contact-form { width: 100%; min-width: 0; }
+.contact-form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.contact-form--modal { position: fixed; inset: 0; z-index: 200; background: #102223a6; backdrop-filter: blur(5px); padding: 24px; display: grid; place-items: center; }
+.contact-form--modal .form-card { position: relative; width: 100%; max-width: 640px; max-height: calc(100dvh - 48px); overflow-y: auto; overscroll-behavior: contain; }
+.contact-form--modal h2 { padding-right: 42px; }
+.contact-form__close { position: absolute; top: 18px; right: 18px; border: 1px solid var(--line); border-radius: 10px; width: 40px; height: 40px; background: var(--surface); cursor: pointer; font-size: 30px; line-height: 1; color: var(--ink); }
+@media (max-width: 540px) { .contact-form__row { grid-template-columns: 1fr; gap: 0; } .contact-form--modal { padding: 12px; } .contact-form--modal .form-card { max-height: calc(100dvh - 24px); } }
 </style>

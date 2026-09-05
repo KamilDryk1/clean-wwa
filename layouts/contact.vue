@@ -1,21 +1,13 @@
 <template>
-	<div>
-	  <Navbar :img="img" :title="title" :subtitle="subtitle" />
-	  <Nuxt />
-	  <Footer />
-	</div>
-  </template>
-  
-  <script>
-  export default {
-	data() {
-	  return {
-		video: null,
-		img: "/assets/img/Kontakt/kontakt-img.jpg",
-		title: "Kontakt",
-		subtitle: "Odkryj nowe życie Twoich mebli! Skontaktuj się z nami już dziś!"
-	  };
-	},
-  };
-  </script>
-  
+  <div class="content-page">
+    <Navbar />
+    <PageIntro image="/assets/img/Kontakt/kontakt-img.jpg" eyebrow="Kontakt" title="Porozmawiajmy o Twoim zleceniu" description="Zadzwoń, napisz lub wypełnij formularz. Pomożemy dobrać usługę i ustalimy dogodny termin." />
+    <Nuxt />
+    <Footer />
+  </div>
+</template>
+
+<script>
+import seo from '~/mixins/seo';
+export default { mixins: [seo] };
+</script>

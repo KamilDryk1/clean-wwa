@@ -1,27 +1,30 @@
 <template>
 	<section class="opinions">
 	  <div class="opinions__container">
+        <h2 v-reveal>Co mówią nasi klienci?</h2>
 		<div class="opinions__content">
-		  <swiper :options="swiperOptions" class="swiper opinions__content-swiper">
-			<swiper-slide v-for="opinion in opinionList" :key="opinion.name">
+
+		  <ContentCarousel label="Opinie klientów" class="opinions__content-swiper">
+			<div class="swiper-slide" v-for="opinion in opinionList" :key="opinion.name">
 				<div class="swiper__element" >
 					<div class="swiper__slide-visual">
 						<div class="title">
-							<img :src="opinion.img" alt="" class="img">
+							<img :src="opinion.img" alt="" class="img" width="44" height="44" loading="lazy" decoding="async">
 							<p class="name">{{ opinion.name }}</p>
 						</div>
 						<div class="stars">
-							<img v-for="n in 5" :key="n" src="/assets/img/opinie/star.png" alt="">
+							<img v-for="n in 5" :key="n" src="/assets/img/opinie/star.png" alt="" width="18" height="18" loading="lazy">
 						</div>
 						<p class="poz"><span>Pozytywne: </span>{{ opinion.poz }}</p>
 						<p class="opinion">{{ opinion.opinion }}</p>
 						<p v-if="opinion.service" class="service"><span>Usługa: </span>{{ opinion.service }}</p>
 					</div>
 				</div>
-			</swiper-slide>
-		  </swiper>
+			</div>
+		  </ContentCarousel>
+
 		</div>
-		<p class="link"><a target="_blank" href="https://www.google.com/search?q=clean+wwa&oq=clean+wwa&aqs=chrome.0.69i59j0i10i22i30j0i10i22i30i625j69i60j69i61j69i60.1774j0j7&sourceid=chrome&ie=UTF-8#lrd=0x4718a1e6396353a7:0x91436c41079cbc63,1,,,,">Sprawdź pozostałe opinie</a></p>
+		<p class="link"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=clean+wwa&oq=clean+wwa&aqs=chrome.0.69i59j0i10i22i30j0i10i22i30i625j69i60j69i61j69i60.1774j0j7&sourceid=chrome&ie=UTF-8#lrd=0x4718a1e6396353a7:0x91436c41079cbc63,1,,,,">Sprawdź pozostałe opinie</a></p>
 	  </div>
 	</section>
 </template>
@@ -30,27 +33,6 @@
 export default {
 	data() {
 		return {
-		  swiperOptions: {
-			slidesPerView: 1,
-			spaceBetween: 30,
-			centeredSlides: false,
-			autoplay: {
-			  delay: 4000,
-			  disableOnInteraction: false,
-			},
-			loop: true,
-			breakpoints: {
-			  1000: {
-				slidesPerView: 3.4,
-			  },
-			  800: {
-				slidesPerView: 2.4,
-			  },
-			  500: {
-				slidesPerView: 1.6,
-			  },
-			},
-		  },
 		  opinionList: [
 			{img: "/assets/img/opinie/mateusz.png", name: "Mateusz Wiek", poz: "Czas reakcji, Jakość, Profesjonalizm, Wartość", opinion: "Polecam CLEAN WWA 100% Szybko, sprawnie. Usługa na wysokim poziomie. Telefon koło południa i za godzinę mebelki już się piorą:) A to wszystko w przystępnej cenie!!! 10000% Polecam!!!", service: "Czyszczenie tapicerki"},
 			{img: "/assets/img/opinie/vitalij.png", name: "Vitaliy Krupin", poz: "Jakość, Profesjonalizm, Wartość", opinion: "Polecam usługi pana Wojciecha, pełen profezjonalizm i wysoka jakość wykonania prac. Bardzo starannie wyczyszczona cała tapicerka w samochodzie, teraz samochód wygląda jak nowy. Cena rozsądna za dany zakres prac i trwałość wykonania. Polecam!!!", service: "Czyszczenie tapicerki"},
@@ -68,88 +50,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.opinions {
-  width: 100%;
-  background-color: #212121;
-  color: white;
-  padding-top: 100px;
-  padding-bottom: 20px;
-
-  &__container {
-	max-width: 1440px;
-	margin: 0 auto;
-  }
-
-  &__content {
-	// margin: 0 4%;
-	display: flex;
-	justify-content: space-around;
-
-	&-opinion {
-	  width: 25%;
-	  text-align: center;
-
-	  img {
-		max-width: 100px;
-	  }
-	}
-
-	.opinion-2 {
-	  margin-top: 30px;
-	}
-  }
-}
-.swiper {
-  max-width: 1440px;
-  margin: 0 0 0 4%;
-
-  &__slide-visual {
-	position: relative;
-	max-width: 350px;
-	height: 350px;
-	overflow: hidden;
-
-	.title {
-		display: flex;
-		gap: 10px;
-		align-items: center;
-		margin-bottom: 10px;
-
-		.img {
-			border-radius: 50%;
-		}
-	}
-
-	.stars {
-		max-width: 25px;
-		display: flex;
-		flex-direction: row;
-		margin-bottom: 10px;
-	}
-
-	.poz {
-		margin-bottom: 5px;
-	}
-
-	.opinion {
-		margin-bottom: 5px;
-	}
-
-	span {
-		font-weight: bold;
-	}
-  }
-}
-.swiper-slide-next + .swiper-slide + .swiper-slide {
-  opacity: 0.5;
-}
-
-.link {
-	text-align: center;
-	font-size: 20px;
-
-	a {
-		color: white;
-	}
-}
+.opinions { background: #212121; color: #fff; }
+.opinions__container { max-width: 1280px; padding: var(--section-space) 6%; margin: auto; }
+.opinions h2 { color: #75e5e8; margin-bottom: 28px; }
+.swiper-slide { height: auto; }
+.swiper__element { height: 100%; padding: 24px; border: 1px solid #ffffff25; border-radius: 12px; background: #ffffff06; }
+.swiper__slide-visual { font-size: 18px; }
+.title { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.title .img { width: 44px; height: 44px; object-fit: cover; border-radius: 50%; }
+.name { font-weight: 700; font-size: 21px; }
+.stars { display: flex; gap: 3px; margin-bottom: 18px; }
+.stars img { width: 18px; height: 18px; object-fit: contain; }
+.poz, .service { font-size: 16px; color: #b6cbcb; margin: 12px 0; }
+.opinion { line-height: 1.6; }
+.link { margin-top: 28px; font-size: 18px; }
+.link a { color: #75e5e8; text-underline-offset: 5px; }
 </style>

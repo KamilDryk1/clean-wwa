@@ -1,20 +1,13 @@
 <template>
-  <div>
-    <Navbar :img="img" :title="title" :subtitle="subtitle" />
+  <div class="content-page">
+    <Navbar />
+    <PageIntro image="/assets/img/DlaFirm/companies-background.jpg" eyebrow="Dla firm" title="Czystość dopasowana do Twojej firmy" description="Profesjonalne pranie wykładzin i tapicerki w Warszawie i okolicach." />
     <Nuxt />
     <Footer />
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      video: null,
-      img: "/assets/img/DlaFirm/companies-background.jpg",
-      title: "Dla firm",
-      subtitle: "Profesjonalne pranie wykładzin i tapicerki – dla firm, hoteli i restauracji."
-    };
-  },
-};
+import seo from '~/mixins/seo';
+export default { mixins: [seo] };
 </script>
