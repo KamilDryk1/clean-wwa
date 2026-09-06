@@ -1,7 +1,7 @@
 <template>
   <main class="content-wrap content-section price-page">
     <div class="price-page__intro">
-      <p>Minimalny koszt zamówienia usługi na terenie Warszawy: <strong>110 zł</strong>.</p>
+      <p>Minimalny koszt zamówienia usługi na terenie Warszawy: <strong>180 zł</strong>.</p>
       <nuxt-link class="content-button" to="/kontakt/">Zapytaj o termin</nuxt-link>
     </div>
     <section v-for="group in pricing" :key="group.title" class="price-page__group">
