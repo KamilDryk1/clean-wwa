@@ -16,7 +16,11 @@ export default {
         ? [{ 'http-equiv': 'Content-Security-Policy', content: 'upgrade-insecure-requests' }]
         : []),
     ],
-    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      { rel: 'preload', as: 'font', type: 'font/woff2', href: '/assets/fonts/SairaCondensed-Regular.woff2', crossorigin: 'anonymous' },
+      { rel: 'preload', as: 'font', type: 'font/woff2', href: '/assets/fonts/SairaCondensed-Bold.woff2', crossorigin: 'anonymous' },
+    ],
   },
   css: ['@/assets/css/util.scss', '@/assets/css/content.scss'],
   plugins: ['@/plugins/reveal'],

@@ -5,28 +5,28 @@
 
 @font-face {
 	font-family: 'Saira Condensed';
-	src: url('../fonts/SairaCondensed-Regular.ttf') format('truetype');
+	src: url('/assets/fonts/SairaCondensed-Regular.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Saira Condensed';
 	font-weight: 300;
-	src: url('../fonts/SairaCondensed-Light.ttf') format('truetype');
+	src: url('/assets/fonts/SairaCondensed-Light.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Saira Condensed';
 	font-weight: 700;
-	src: url('../fonts/SairaCondensed-Bold.ttf') format('truetype');
+	src: url('/assets/fonts/SairaCondensed-Bold.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Saira Condensed';
 	font-weight: 900;
-	src: url('../fonts/SairaCondensed-Black.ttf') format('truetype');
+	src: url('/assets/fonts/SairaCondensed-Black.woff2') format('woff2');
 	font-display: swap;
 }
 

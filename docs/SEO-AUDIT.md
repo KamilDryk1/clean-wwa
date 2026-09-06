@@ -1,6 +1,6 @@
 # Audyt SEO CLEANWWA
 
-Data: 5 września 2026. Zakres: kod projektu, wygenerowane pliki `dist`, widoki desktop/mobile oraz odczyt publicznej domeny. Zmiany przygotowano lokalnie; audyt nie obejmuje publikacji ani dostępu do Google Search Console, Profilu Firmy w Google i kont analitycznych.
+Data: 5–6 września 2026. Zakres: kod projektu, wygenerowane pliki `dist`, widoki desktop/mobile oraz odczyt publicznej domeny. Zmiany przygotowano lokalnie; audyt nie obejmuje publikacji ani dostępu do Google Search Console, Profilu Firmy w Google i kont analitycznych.
 
 ## Stan publicznej strony
 
@@ -37,6 +37,8 @@ W odczytanej odpowiedzi HTML strona główna i `/cennik/` miały ten sam tytuł 
 Suma oryginalnych 48 grafik: **6 524 448 bajtów**. Suma największych wygenerowanych wariantów WebP: **2 528 780 bajtów**, czyli około **61% mniej**. To porównanie całego zestawu grafik, nie transferu jednej strony; mniejsze ekrany mogą pobierać jeszcze mniejsze warianty. Oryginały pozostają w repozytorium.
 
 Zdjęcie wykładziny na stronie B2B zmniejszono z **2 057 610 do 220 322 bajtów** w największym wariancie. Wymiary obrazów rezerwują miejsce w układzie, ograniczając przeskakiwanie treści podczas ładowania.
+
+Cztery używane odmiany fontu Saira Condensed przekonwertowano bez zmiany glifów do WOFF2: **354 200 → 132 596 bajtów**, czyli około **63% mniej**. Odmiany Regular i Bold są wstępnie ładowane z tych samych adresów, które wykorzystuje CSS. Oryginalne TTF i licencja pozostają w projekcie.
 
 Wideo tła uruchamia się po załadowaniu strony i krótkim opóźnieniu, wyłącznie na ekranach od 768 px. Przy oszczędzaniu danych lub `prefers-reduced-motion` nie jest uruchamiane. Nie konkuruje z początkowym ładowaniem obrazu nagłówka na telefonach.
 

@@ -144,3 +144,12 @@ assert.ok(!sitemap.includes('https://cleanwwa.pl/404'));
 const locs = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => match[1]);
 assert.equal(locs.length, 8); assert.ok(locs.every(url => url.endsWith('/')), 'Sitemap URLs match production redirects');
 console.log('PASS: unique SEO metadata, social previews, consistent business graph, breadcrumbs, responsive images, SSR carousels, noindex 404 and canonical sitemap URLs.');
+
+const fontPreloads = select(home.nodes, 'link', attrs => attrs.rel === 'preload' && attrs.as === 'font');
+assert.equal(fontPreloads.length, 2, 'Preload only the two initially used font weights');
+for (const font of fontPreloads) {
+  assert.equal(font.attribs.type, 'font/woff2');
+  assert.equal(font.attribs.crossorigin, 'anonymous');
+  assert.ok(font.attribs.href.endsWith('.woff2'));
+}
+console.log('PASS: WOFF2 font preloads use existing assets and anonymous CORS.');

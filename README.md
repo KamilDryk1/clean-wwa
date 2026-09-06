@@ -74,6 +74,7 @@ Szczegółowe wyniki przeglądu i czynności po publikacji: [docs/SEO-AUDIT.md](
 - `utils/site-schema.js`: wspólny graf firmy, witryny, stron i okruszków nawigacyjnych. Usługi i FAQ dodają własne dane zgodne z widoczną treścią.
 - `pages/404.vue`: Nuxt generuje z tej trasy plik `dist/404.html`; `layouts/error.vue` obsługuje błędy podczas nawigacji. Hosting powinien podawać dokument błędu z kodem HTTP 404.
 - `components/OptimizedImage.vue`, `data/images.json` i `static/assets/optimized/`: responsywne warianty WebP (jakość 80, do 1600 px), wymiary obrazów i natywne lazy loading. Warianty są zapisane w repozytorium; build nie wymaga dodatkowej biblioteki do ich konwersji. Przy zmianie zdjęcia trzeba odświeżyć jego warianty oraz wpis manifestu.
+- `static/assets/fonts/`: fonty WOFF2 przekonwertowane z oryginalnych TTF. Regular i Bold korzystają z preloadu; CSS wskazuje te same pliki.
 - `components/ContentCarousel.vue`: galerie i opinie w HTML, przewijanie CSS i przyciski. Nie wymagają Swipera ani automatycznego przesuwania.
 - `plugins/reveal.js`: dyrektywa `v-reveal` animuje element raz przy pierwszym wejściu w widok. `v-reveal="70"` dodaje opóźnienie 70 ms (maksymalnie 180 ms). Nie zagnieżdżać animowanych bloków i nie dodawać dyrektywy do H1, całych długich sekcji ani kontrolek formularzy.
 
